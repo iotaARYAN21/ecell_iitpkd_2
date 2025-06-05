@@ -1,0 +1,328 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../p16.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-color: yellow; */
+    /* opacity: 0.2; */
+}
+.home-overlay{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(4, 68, 132, 0.468) ; */
+    
+    /* background-size: cover; */
+    /*rgba(4, 68, 132, 0.468) */
+}
+.homeContent{
+    height: 100%;
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.homeContent h1{
+    color: #fff;
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+}
+.arrow{
+    height: 4rem;
+    width: auto;
+    /* transform: rotate(180deg); */
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    animation: upDown 2s alternate infinite ease-in-out ;
+}
+@keyframes upDown{
+    from{
+        transform: translateY(-10px) rotate(180deg);
+    }
+    to{
+        transform: translateY(10px) rotate(180deg);
+    }
+}
+/* .intro,.vision,.team{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide 1s ease-out forwards;
+    animation-timeline: scroll();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes slide {
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} */
+
+.vision,.events-activites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide-up-text{
+    opacity: 0;
+    transform: translateY(50px);
+    animation:slideUp 1s ease-out forwards;
+    animation-delay: 1s;
+}
+h1,h2,h4,p{
+    text-align: center;
+}
+.explore{
+    color: white;
+    font-size: 1.5rem;
+    border: 5px solid white;
+    padding: 1.5rem;
+}
+.explore:hover{
+    border-color: orange;
+    color: orange;
+    /* scale: 1.1; */
+}
+
+@keyframes slideUp{
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.intro{
+  height: 100vh;
+  width: 100%;
+  
+  text-align: center;
+  margin-bottom: 5rem;  
+  /* opacity: 0.5; */
+  /* z-index: -1; */
+  /* animation : animateOnScroll linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%; */
+}
+.events-activites{
+    height: 100vh;
+    width: 100%;
+}
+@keyframes animateOnScroll{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.intro > h1 ,.vision h1 ,.events-activities h1 ,.team h1{
+  /* font-size: 3rem; */
+  padding: 2rem 0;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.intro h2{
+    font-size: 1.5rem;
+    margin: 2rem ;
+}
+.intro > p , .vision p{
+  font-size:1.5rem;
+  margin: 0 3rem;
+}
+.intro ul li{
+    font-size: 1.5rem;
+    text-align:start;
+    margin: 1rem ;
+}
+.intro .list{
+    margin: 1rem 30%;
+    width: auto;
+    /* border: 2px solid ; */
+}
+
+.intro , .vision , .events-activites ,.team{
+    margin: 20px 20px;
+}
+
+
+/* Event and activities */
+.container{
+    /* margin-top:100px ; */
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+}
+.content{
+    /* margin-top: 100px; */
+    position: sticky;
+    top: 0;
+    height: 25em;
+    margin-top: 2rem;
+    margin-bottom: 15rem ;
+    width: auto;
+    display: flex;
+    justify-content: space-around  ;
+    align-items: center;
+
+}
+
+.card{
+    /* border: 2px solid green; */
+    /* position: sticky;
+    top: 0; */
+    height: 25em;
+    /* margin: 50px auto; */
+    width: 20em;
+    background-color: white;
+    margin: 150px 20px;
+    border-radius: 5px ;
+    box-shadow: 0 -5px 10px black , 0 5px 10px black;
+    color: black;
+}
+
+.content > .description{
+    background-color: #59bdbd;
+    height: 25em;
+    max-width: 30em;
+    text-align: center;
+    border: 2px solid white;
+    /* margin-top: 50%; */
+}
+.description h1{
+    font-size: 1.7em;
+}
+.description p{
+    font-size: 1.3em;
+}
+@media (max-width:600px){
+    .homeContent h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .explore{
+        /* color: white; */
+        font-size: 1rem;
+        border: 5px solid white;
+        padding: 1.5rem;
+    }
+
+}
+
+/* .container:nth-child(3){
+    margin-bottom: 50px;
+    top: 50rem;
+} */
+
+.team{
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 20rem;
+}
+.two-row{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.three-row{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.member{
+    height: 16rem;
+    width: 13rem;
+    background-color:black;
+    clip-path:inset( 0 0 0 0 round 30px 0px );
+}
+.member > img{
+    height: 13rem;
+    width: auto;
+}
+.member>*{
+    color: white;
+}
+@media (max-width:850px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        gap: 5rem;
+        overflow-y: visible;
+    }
+    .container:last-child{
+        margin-bottom:150px ;
+    }
+    .content{
+        position: static;
+        /* display: block; */
+        flex-direction: column;
+        /* gap: 20rem; */
+        margin-bottom: 30rem;
+    }
+    .team{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two-row,.three-row{
+        flex-direction: column;
+    }
+}
+
+/* footer */
+footer{
+    background-color: #0f172a;
+}
+.footer_div1{
+    margin: 0;
+    padding: 0;
+    height: 20rem;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_div2{
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.footer_r1 img{
+    height: 10rem;
+    margin: 0;
+    padding: 0;
+}
+/* .footer_r2  , .footer_r3, .footer_r4{
+    height: 100%;
+} */
+.footer_r2 ul , .footer_r3 ul{
+    /* height: 100%; */
+    margin: 5rem 0;
+}
+.footer_r2 ul li , .footer_r3 ul li{
+    margin: 2rem ;
+}
+.footer_r4{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-self: flex-start;
+    /* justify-content: space-between; */
+}
+.footer_r4 p{
+    text-align: start;
+}
+

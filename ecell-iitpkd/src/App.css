@@ -1,0 +1,11 @@
+/* App{
+  height: 100%;
+  width: 100%;
+} */
+body{
+  margin: 0;
+  padding: 0;
+background-color:#59bdbd;
+scrollbar-color: white #59bdbd;
+overflow-x: hidden;
+}
