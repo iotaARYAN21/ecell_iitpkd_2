@@ -5,7 +5,18 @@
 body{
   margin: 0;
   padding: 0;
-background-color:#59bdbd;
-scrollbar-color: white #59bdbd;
+/* background-color:#1b1c1b; */
+scrollbar-color: #1b1b1b #fbc45e;
 overflow-x: hidden;
+/* color:#fbc45e; */
+background-color: #0c0c0c;
+color: #ffb007;
+--text-secondary: #cccccc;
+--border-color: #2c2c2c;
+
+/* background-image: url('../public/bg.jpg');
+background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
 }
+

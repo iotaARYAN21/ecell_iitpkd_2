@@ -14,10 +14,10 @@ function Home(){
             <div className="homeContent">
                 <h1 className="slide-up-text">Entrepreneurship Cell</h1>
                 <h1 className="slide-up-text">IIT Palakkad</h1>
-                <div className="explore slide-up-text" ref={introContent} onClick={handleClick}><h3>Explore</h3></div>
+                {/* <div className="explore slide-up-text" ref={introContent} onClick={handleClick}><h3>Explore</h3></div> */}
                 <img src="/arrow.png" alt="" className="arrow"  onClick={handleClick}/>
             </div>
-            <div className="intro" ref={introContent} >
+            <div className="intro animate-elt" ref={introContent} >
                 <h1>About Us</h1>
                 <p>E-Cell IIT Palakkad is a student-driven initiative that nurtures the spirit of entrepreneurship through events, mentorship, and hands-on support.
                     At the core is <b>SURGE</b> ("Startup Upscaling and Resource Growth Engine")—a dynamic team of students, faculty, alumni, and experts from TechIn, IPTIF, and the CSquare Innovation Lab—dedicated to turning ideas into startups.
@@ -32,12 +32,12 @@ function Home(){
                 </ul>
                 </div>
             </div>
-            <div className="vision">
+            <div className="vision animate-elt">
                     <h1>Our Vision</h1> 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem assumenda distinctio! Et odio iusto perspiciatis ullam dolore labore quasi adipisci nobis exercitationem distinctio expedita quo saepe accusamus deserunt, magni nostrum repellat, quisquam ab perferendis explicabo? Repudiandae inventore corporis dolores ipsa repellat deserunt fuga cumque laudantium, minima suscipit facere, nihil laborum, sint vero. Porro nobis nesciunt deleniti vel itaque. Possimus unde, eaque quasi nihil sint ducimus ipsa placeat earum, ut ipsum, totam fugit a. Repudiandae numquam, deleniti laboriosam ducimus consequatur rem explicabo quis iusto reprehenderit sunt a fugiat. Officia distinctio optio molestiae quae adipisci id delectus! Recusandae animi et impedit officia mollitia explicabo repudiandae ipsa veritatis ratione quaerat. A assumenda, velit rerum sapiente omnis alias ullam iste rem aspernatur quisquam laborum! Voluptatum qui dolorum soluta eius fugiat eum dicta laudantium mollitia sed, culpa, blanditiis non officia maiores. Eius laudantium nesciunt at quas neque corporis eos animi asperiores, quaerat ipsum iusto. Perspiciatis totam similique explicabo numquam doloremque maxime quo fugit enim velit nostrum magnam a, eaque nulla tempore qui quae tenetur provident corporis, ut molestiae rerum odit facilis sequi. Corrupti impedit eligendi odit, fuga doloribus voluptatibus consectetur in assumenda voluptate minima iure corporis nesciunt culpa nam quam perspiciatis harum omnis aspernatur? Mollitia, aliquid unde impedit delectus laborum quibusdam soluta sit nulla a qui quae veniam exercitationem natus perspiciatis vero dolores eligendi eveniet expedita maxime! Est iste nisi earum impedit quasi et corporis quibusdam. Animi repellat quae dolorem dolores dolore eaque, voluptatem ipsa velit praesentium, illum aperiam vero reiciendis aut ipsam! Perferendis.
                     </p>
                 </div>
-                <div className="events-activities">
+                <div className="events-activities animate-elt">
                     <h1>Events & Activities</h1>
                     <div className="container">
                         <div className="content">
