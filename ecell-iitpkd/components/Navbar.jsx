@@ -9,8 +9,7 @@ function Navbar(){
     function handleClick(){
         setMenuOpen(prev => !prev);
     }
-    return <div className="navbar">
-        <nav>
+    return <nav>
             <Link to="/" className="title">Logo</Link>
             {/* takes to homepage of the website */}
             <div className="menu" onClick={handleClick}>
@@ -23,7 +22,7 @@ function Navbar(){
                 <li><NavLink to="contact">Contact</NavLink></li>
             </ul>
         </nav>
-    </div>
+    // </div>
 }
 export default Navbar;
 

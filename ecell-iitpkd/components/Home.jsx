@@ -1,6 +1,6 @@
 // import React from "react";
 import "./home.css";
-import Navbar from "./Navbar.jsx";
+// import Navbar from "./Navbar.jsx";
 import {useRef} from "react";
 // import arrow from "../public/arrow.png"
 function Home(){
