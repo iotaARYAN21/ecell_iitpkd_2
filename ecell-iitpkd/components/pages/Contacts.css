@@ -1,12 +1,13 @@
 form{
     display: flex;
     flex-direction: column;
-    margin: 0 25%;
+    margin: 5rem 25%;
 }
 input ,textarea{
     margin: 20px 0;
     border-radius: 7px;
     padding: 10px;
+    /* border: 2px solid #fbc45e; */
 }
 input{
     height: 40px;

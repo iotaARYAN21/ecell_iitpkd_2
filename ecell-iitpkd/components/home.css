@@ -321,13 +321,16 @@ ul{
 } */
 .footer_r2 ul , .footer_r3 ul{
     /* height: 100%; */
-    margin: 5rem 0;
+    margin: 2.5rem 0;
 }
-.footer_r2 ul li , .footer_r3 ul li{
-    margin: 2rem ;
+.footer_r2 ul li{
+    margin: 1rem ;
+}
+.footer_r3 ul li{
+    margin: 2rem;
 }
 .footer_r4{
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -336,6 +339,14 @@ ul{
 }
 .footer_r4 p{
     text-align: start;
+}
+
+
+.footer_r2 li >a{
+    height: 2.5rem ;
+}
+.footer_r2 a > img{
+    height: 2.5rem;
 }
 
 @media (max-width:850px){

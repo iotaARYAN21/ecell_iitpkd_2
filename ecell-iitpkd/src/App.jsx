@@ -6,12 +6,14 @@ import { Router,Route,Routes } from "react-router-dom";
 import About from "../components/pages/About.jsx";
 import Contacts from "../components/pages/Contacts.jsx";
 import './App.css'
+import RightNavBar from "../components/RightNavBar.jsx";
 
 function App() {
 
   return (
     <>
     <Navbar></Navbar>
+    <RightNavBar/>
     {/* <Router> */}  
     {/* if Router is present then it is not rendering the website */}
         <Routes>

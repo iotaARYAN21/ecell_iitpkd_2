@@ -2,6 +2,8 @@
 import "./home.css";
 // import Navbar from "./Navbar.jsx";
 import {useRef} from "react";
+// import userCard from "./UserCard";
+import UserCard from "./userCard";
 // import arrow from "../public/arrow.png"
 function Home(){
     const introContent = useRef();
@@ -74,19 +76,19 @@ function Home(){
                 <div className="team">
                     <h1>Our Team</h1>
                     <div className="two-row">
-                        <div className="member">
+                        <UserCard/>
+                        <UserCard/>
+                        {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
-                        </div>
-                        <div className="member">
-                            <img src="./user.jpg" alt="user" />
-                            <h4>John Doe</h4>
-                            <p>Role</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="three-row">
-                        <div className="member">
+                        <UserCard/>
+                        <UserCard/>
+                        <UserCard/>
+                        {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
@@ -100,10 +102,13 @@ function Home(){
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="three-row">
-                        <div className="member">
+                        <UserCard/>
+                        <UserCard/>
+                        <UserCard/>
+                        {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
@@ -117,10 +122,13 @@ function Home(){
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="three-row">
-                        <div className="member">
+                        <UserCard/>
+                        <UserCard/>
+                        <UserCard/>
+                        {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
@@ -134,10 +142,13 @@ function Home(){
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="three-row">
-                        <div className="member">
+                        <UserCard/>
+                        <UserCard/>
+                        <UserCard/>
+                        {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
@@ -151,10 +162,13 @@ function Home(){
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="three-row">
-                        <div className="member">
+                        <UserCard/>
+                        <UserCard/>
+                        <UserCard/>
+                        {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
@@ -168,10 +182,13 @@ function Home(){
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="three-row">
-                        <div className="member">
+                        <UserCard/>
+                        <UserCard/>
+                        <UserCard/>
+                        {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
@@ -185,10 +202,12 @@ function Home(){
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="two-row">
-                        <div className="member">
+                        <UserCard/>
+                        <UserCard/>
+                        {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p>
@@ -197,7 +216,7 @@ function Home(){
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
                             <p>Role</p> 
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <footer>
@@ -215,9 +234,10 @@ function Home(){
                         <div className="footer_r2">
                             <ul>
                                 <li><h3>Social Media</h3></li>
-                                <li>Instagram</li>
-                                <li>X (Twitter)</li>
-                                <li>LinkedIn</li>
+                                <li><a href="https://www.instagram.com/ecell_iitpkd?igsh=MXg1b3RjYzlibXU5dg==" target="_blank"><img src="../ig.svg" alt="" /></a></li>
+                                <li><a href="https://www.linkedin.com/company/ecell-iitpkd/" target="_blank"><img src="../linkedin.svg" alt="" /></a></li>
+                                <li><a href="https://x.com/E_Cell_IITPKD" target="_blank"><img src="../twitter.svg" alt="" /></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCMBYD5neK0bhsYHuios9KPw" target="_blank"><img src="../yt.svg" alt="" /></a></li>
                             </ul>
                         </div>
                         <div className="footer_r3">
