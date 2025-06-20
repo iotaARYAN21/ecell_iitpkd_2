@@ -1,6 +1,7 @@
 import './Contacts.css';
 import {useForm} from 'react-hook-form';
 import axios from 'axios';
+import Footer from '../Footer';
 import { ToastContainer, toast } from 'react-toastify';
 function Contacts(){
     const {
@@ -34,7 +35,8 @@ function Contacts(){
         // alert(err.message);
     }
   }
-    return <form onSubmit={handleSubmit(sendData)} >
+    return <>
+        <form onSubmit={handleSubmit(sendData)} >
         <h1>SEND US A MESSAGE</h1>
         <input type="text" placeholder="Name" {...register('name',
             {
@@ -58,6 +60,8 @@ function Contacts(){
             <button type='submit' disabled={isSubmitting}>{isSubmitting ? 'Submitting' : 'Submit'}</button>
         </div>
     </form>
+    <Footer/>
+    </>
     //TODO 
     //TODO1 : to make send functionality work  ->DONE
     //TODO2 : add toaster if the input requirement is not fulfilled

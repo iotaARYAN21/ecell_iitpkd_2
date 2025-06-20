@@ -4,13 +4,15 @@ import "./home.css";
 import {useRef} from "react";
 // import userCard from "./UserCard";
 import UserCard from "./userCard";
+import EventCard from "./EventCard";
+import Footer from "./Footer";
 // import arrow from "../public/arrow.png"
 function Home(){
     const introContent = useRef();
     function handleClick(){
         introContent.current.scrollIntoView({behavior:"smooth"});      
     }
-    const date = new Date().getFullYear();
+    
     return <div className="home">
         <div className="home-overlay">
             <div className="homeContent">
@@ -36,41 +38,30 @@ function Home(){
             </div>
             <div className="vision animate-elt">
                     <h1>Our Vision</h1> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem assumenda distinctio! Et odio iusto perspiciatis ullam dolore labore quasi adipisci nobis exercitationem distinctio expedita quo saepe accusamus deserunt, magni nostrum repellat, quisquam ab perferendis explicabo? Repudiandae inventore corporis dolores ipsa repellat deserunt fuga cumque laudantium, minima suscipit facere, nihil laborum, sint vero. Porro nobis nesciunt deleniti vel itaque. Possimus unde, eaque quasi nihil sint ducimus ipsa placeat earum, ut ipsum, totam fugit a. Repudiandae numquam, deleniti laboriosam ducimus consequatur rem explicabo quis iusto reprehenderit sunt a fugiat. Officia distinctio optio molestiae quae adipisci id delectus! Recusandae animi et impedit officia mollitia explicabo repudiandae ipsa veritatis ratione quaerat. A assumenda, velit rerum sapiente omnis alias ullam iste rem aspernatur quisquam laborum! Voluptatum qui dolorum soluta eius fugiat eum dicta laudantium mollitia sed, culpa, blanditiis non officia maiores. Eius laudantium nesciunt at quas neque corporis eos animi asperiores, quaerat ipsum iusto. Perspiciatis totam similique explicabo numquam doloremque maxime quo fugit enim velit nostrum magnam a, eaque nulla tempore qui quae tenetur provident corporis, ut molestiae rerum odit facilis sequi. Corrupti impedit eligendi odit, fuga doloribus voluptatibus consectetur in assumenda voluptate minima iure corporis nesciunt culpa nam quam perspiciatis harum omnis aspernatur? Mollitia, aliquid unde impedit delectus laborum quibusdam soluta sit nulla a qui quae veniam exercitationem natus perspiciatis vero dolores eligendi eveniet expedita maxime! Est iste nisi earum impedit quasi et corporis quibusdam. Animi repellat quae dolorem dolores dolore eaque, voluptatem ipsa velit praesentium, illum aperiam vero reiciendis aut ipsam! Perferendis.
+                    <p>The Entrepreneurship Cell of IIT Palakkad envisions building a thriving entrepreneurial ecosystem within the institute. With the launch of its flagship event, the E-Summit 2026, the E-Cell aims to position the institute as a hub of innovation and entrepreneurship. The vision is to empower students by providing them with real-world exposure, mentorship, and resources necessary to transform ideas into impactful ventures. Through national-level competitions, networking events, and collaborations with industry leaders, IIT Palakkad E-Cell seeks to inspire the next generation of entrepreneurs and foster a culture of creative problem-solving and startup excellence.
                     </p>
                 </div>
                 <div className="events-activities animate-elt">
                     <h1>Events & Activities</h1>
                     <div className="container">
-                        <div className="content">
-                            <img src="/startTank.jpg" alt="" className="card" />
-                            <div className="description">
-                                <h1>Start Tank</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, repellendus! Provident nisi reprehenderit eos, autem totam nemo non voluptatum saepe? Hic reiciendis sit illum quia incidunt voluptatem aliquam illo sunt itaque velit esse, autem, officia dolor dolorem vitae facere quibusdam tempore libero minus repudiandae quidem non? Consequuntur ex debitis eum.</p>
-                            </div>
-                        </div>
-                        <div className="content">
-                            <img src="/startup expo.jpg" alt="" className="card" />
-                            <div className="description">
-                                <h1>Startup Expo</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae unde facilis possimus at soluta ad architecto sint sequi nam, doloribus saepe distinctio sed consequuntur corrupti quis eligendi neque consequatur? Assumenda eligendi nobis, quas molestiae hic iusto quae nam eum aliquam reprehenderit, distinctio id, ipsum itaque beatae iure qui unde consectetur?
-                                </p>
-                            </div>
-                        </div>
-                        <div className="content">
-                            <img src="/hackathon.jpg" alt="" className="card" />
-                            <div className="description">
-                                <h1>Hackathon</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis odit suscipit dolores a nemo exercitationem perferendis fugit magni accusantium eius est amet eos non sapiente, facilis sit illum quos voluptatum temporibus architecto assumenda. Corporis dignissimos a ex quidem, dolorem laudantium ut tenetur deleniti distinctio tempore veniam dolorum accusantium reiciendis quaerat?</p>
-                            </div>
-                        </div>
-                        <div className="content">
-                            <img src="/ideathon.jpg" alt="" className="card" />
-                            <div className="description">
-                                <h1>Ideathon</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis qui explicabo dolores incidunt ut repudiandae ad expedita magni ab perferendis tenetur, modi iure molestiae assumenda et non laboriosam totam doloribus consectetur tempore consequuntur esse! Voluptas, officiis inventore nemo facere reprehenderit ipsa necessitatibus quaerat adipisci? Dignissimos ducimus obcaecati nulla id eveniet.</p>
-                            </div>
-                        </div>
+                        <EventCard image={'/startTank.jpg'}>
+                            <h1>Start Tank</h1>
+                    <p>A live startup pitching session where participants present their ideas to investors. We plan to make this interesting by also allowing the audience to do bidding on each idea with virtual currency that we allot to them and the idea getting maximing investment from the audience wins a prize money and inturn the idea promises the people who bid that when it is officially launched as a product and its’ share value reaches beyond a threshold, it would give a share proportionate to the people who bid in it . This will also have a registration fees.</p>
+                        </EventCard>
+                        <EventCard image='/hackathon.jpg'>
+                            <h1>Hackathon</h1>
+                    <p>Teams will work on building prototypes and MVPs of innovative solutions.</p>
+                        </EventCard>
+                        <EventCard image='/ideathon.jpg'>
+                             <h1>Ideathon</h1>
+                    <p>Following up on a problem statement teams will have 24 hours to thrive and come up with a proper scratch to product plan and also how the
+company might sustain in the market. Teams simulate running the startup, making real-time business decisions.</p>
+                        </EventCard>
+                        <EventCard image='/startTank.jpg'>
+                            <h1>Startup Expo</h1>
+                    <p>A platform for startups and businesses to showcase their innovations and connect with potential investors and customers. We shall be inviting startups from all across India and also those supported by E-Cells of other IITs.
+                    </p>
+                        </EventCard>
                     </div>
                 </div>
                 <div className="team">
@@ -219,15 +210,11 @@ function Home(){
                         </div> */}
                     </div>
                 </div>
-                <footer>
-                    {/* logo
-                        social media
-                        useful links
-                        contact
-                    */}
+                {/* <footer>
+                    
                     <div className="footer_div1">
                         <div className="footer_r1">
-                        <img src="./arrow.png" alt="logo" />
+                        <img src="./ecell_final_logo.png" alt="logo" />
                         <h3>E-Cell IIT PALAKKAD</h3>
                         <h3>The Fire Within</h3>
                         </div>
@@ -251,14 +238,17 @@ function Home(){
                         </div>
                         <div className="footer_r4">
                             <h3>CONTACT</h3>
-                            <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, id.</address>
-                            <p>mail</p>
+                            <address>Indian Institute of Technology Palakkad <br></br>
+                                    Kanjikode | Palakkad <br />
+                                    Kerala | Pin: 678623</address>
+                            <p>Mail : Surge@iitpkd.ac.in</p>
                         </div>
                     </div>
                     <div className="footer_div2">
                         © {date} Copyright: E-Cell IIT Palakkad
                     </div>
-                </footer>
+                </footer> */}
+                <Footer/>
         </div>
        
     </div>

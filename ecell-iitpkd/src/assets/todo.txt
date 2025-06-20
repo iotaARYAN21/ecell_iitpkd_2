@@ -1,1 +1,6 @@
 Embed Instagram or LinkedIn feeds dynamically
+
+for smaller screen widths make the user card show the contact details by default and two profiles in a row
+
+for the contact form , use the mail id of ecell
+for the event calendar , use the google calendar api of ecell

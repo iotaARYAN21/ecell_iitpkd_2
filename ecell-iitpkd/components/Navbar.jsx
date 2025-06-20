@@ -10,7 +10,7 @@ function Navbar(){
         setMenuOpen(prev => !prev);
     }
     return <nav>
-            <Link to="/" className="title">Logo</Link>
+            <Link to="/" className="title"><img src="../ecell_final_logo.png" alt="" /></Link>
             {/* takes to homepage of the website */}
             <div className="menu" onClick={handleClick}>
                 <span></span>
@@ -18,7 +18,7 @@ function Navbar(){
                 <span></span>
             </div>
             <ul className={menuOpen ? "open" : ""}>
-                <li><NavLink to="/about">About Us</NavLink></li>
+                <li><NavLink to="allevents">Events</NavLink></li>
                 <li><NavLink to="contact">Contact</NavLink></li>
             </ul>
         </nav>

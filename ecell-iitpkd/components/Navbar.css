@@ -89,3 +89,10 @@ nav .menu span{
         margin: 0.2rem 0.5rem;
     }
 }
+.title > img{
+    /* margin: 0.2rem 0; */
+    margin-top: 0.3rem;
+    height:3.5rem;
+    border-radius:5px;
+    /* width: 20px; */
+}
