@@ -12,7 +12,7 @@ const UserCard = () => {
             <div className="socials">
                 <h3 >socials</h3>
                 <ul >
-                    <li><a href="" className='card_a'><img src="../usercard_ig.svg" alt="insta" /></a></li>
+                    {/* <li><a href="" className='card_a'><img src="../usercard_ig.svg" alt="insta" /></a></li> */}
                     <li><a href="" className='card_a'><img src="../usercard_lk.svg" alt="linkedin" /></a></li>
                     <li><a href="" className='card_a'><img src="../usercard_mail.svg" alt="mail" /></a></li>
                 </ul>

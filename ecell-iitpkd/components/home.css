@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .home{
     width: 100%;
     height: 100vh;
@@ -26,14 +29,16 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
 }
 .homeContent h1{
     color: #fbc45e;
     font-size: 4.2rem;
     margin-bottom: 2rem;
-    width: 100%;
+    width: 90%;
     text-align: left ;
-    padding-left: 2em;
+    padding-left: 1em;
+    word-wrap: break-word;
     /* position: relative; */
 }
 
@@ -46,7 +51,7 @@
     /* transform: rotate(180deg); */
     /* display: block; */
     position: absolute;
-    bottom: 70px;
+    bottom: 10px;
     right: 20px;
     animation: upDown 2s alternate infinite ease-in-out ;
 }
@@ -58,7 +63,7 @@
         transform: translateY(10px) rotate(180deg);
     }
 }
-/* .intro,.vision,.team{
+/* ,.vision,.team{
     opacity: 0;
     transform: translateY(50px);
     animation: slide 1s ease-out forwards;
@@ -72,7 +77,8 @@
     }
 } */
 
-.vision,.events-activites{
+.vision,.events-activities{
+    min-height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,11 +114,12 @@ h1,h2,h4,p{
 }
 
 .intro{
-  height: 100vh;
-  width: 100%;
+  height: auto;
+  width: 100vw;
   text-align: center;
-  padding-top: 5rem;
-  scroll-margin-top: 4rem;
+  /* padding-top: 5rem; */
+  scroll-margin-top: 10rem;
+  margin-bottom: auto;
   /* margin-bottom:15rem;   */
   /* opacity: 0.5; */
   /* z-index: -1; */
@@ -127,9 +134,10 @@ h1,h2,h4,p{
   /* will-change: transform, opacity; */
   /* background-color: #1a1a1a; */
 }
-.events-activites{
+.events-activities{
     height: 100vh;
     width: 100%;
+    /* border: 2px solid white; */
 }
 @keyframes animateOnScroll{
     from{
@@ -150,6 +158,12 @@ h1,h2,h4,p{
   font-weight: 900;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.events-activities h1{
+    margin-top: 4rem;
+    margin-bottom:2rem ;
+    padding: 0;
+}
+
 .intro h2{
     font-size: 1.5rem;
     margin: 2rem ;
@@ -158,13 +172,24 @@ h1,h2,h4,p{
   font-size:1.5rem;
   margin: 0 3rem;
 }
+.intro ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .intro ul li{
     font-size: 1.5rem;
     text-align:start;
     margin: 1rem ;
 }
 .intro .list{
-    margin: 1rem 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 1rem;
     width: auto;
     /* border: 2px solid ; */
 }
@@ -176,66 +201,18 @@ h1,h2,h4,p{
 
 /* Event and activities */
 .container{
-    /* margin-top:100px ; */
     height: 500px;
     width: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     scrollbar-width: none;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem; /* 👈 ensures content doesn’t stick */
+    /* min-height: 40vh; */
     /* border: 1px solid white; */
 }
-.content{
-    /* margin-top: 100px; */
-    position: sticky;
-    top: 0;
-    height: 25em;
-    margin-top: 2rem;
-    margin-bottom: 5rem ;
-    width: auto;
-    display: flex;
-    justify-content: space-around  ;
-    align-items: center;
-}
 
-.card{
-    /* border: 2px solid green; */
-    /* position: sticky;
-    top: 0; */
-    height: 25em;
-    /* margin: 50px auto; */
-    width: 20em;
-    background-color: white;
-    margin: 150px 20px;
-    border-radius: 5px ;
-    box-shadow: 0 -5px 10px black , 0 5px 10px white;
-    color: black;
-}
-.content:nth-child(2){
-    top: 20px;
-}
-.content:nth-child(3){
-    top: 40px;
-}
-.content:nth-child(4){
-    top: 60px;
-}
 
-.content > .description{
-    background-color: #fbc45e;
-    height: 25em;
-    max-width: 30em;
-    text-align: center;
-    color: #1b1b1b;
-    border: 5px solid white;
-    border-radius:10px;
-    box-shadow: 0 -5px 10px black , 5px 0 10px white , -5px 0 10px white;
-    /* margin-top: 50%; */
-}
-.description h1{
-    font-size: 1.7em;
-}
-.description p{
-    font-size: 1.3em;
-}
+
 @media (max-width:800px){
     .homeContent h1{
         font-size: 2.5rem;
@@ -261,6 +238,7 @@ h1,h2,h4,p{
 .team{
     display: grid;
     gap: 2rem;
+    margin-top: 2rem;
     margin-bottom: 20rem;
 }
 .two-row{
@@ -293,38 +271,33 @@ h1,h2,h4,p{
 
 /* footer */
 
-@media (max-width:850px){
+@media (max-width:600px) {
     .container{
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: max-content;
         width: auto;
         gap: 5rem;
         overflow-y: visible;
+        /* margin-bottom: auto; */
+         margin-bottom: 6rem;
     }
     .container:last-child{
         margin-bottom:150px ;
     }
-    .content{
+    .team {
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+  }
+    /* .content{
         position: static;
-        /* display: block; */
         flex-direction: column;
-        /* gap: 20rem; */
         margin-bottom: 30rem;
     }
-    .team{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+     */
 
-    .two-row,.three-row{
-        flex-direction: column;
-    }
-    .intro{
-        padding-bottom: 15rem;
-    }
+
+
     /* .footer_r1 img{
     height: 10rem;
     margin: 0;
@@ -336,4 +309,53 @@ h1,h2,h4,p{
     .footer_r4{
         margin-left: 1rem;
     } */
+}
+@media (max-width:400px) {
+    .container{
+        min-height: auto;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width:900px) {
+    .team{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two-row,.three-row{
+        flex-direction: column;
+    }
+    /* .intro{
+        padding-bottom: 15rem;
+    } */
+    .list ul{
+        padding-left: 2rem;
+    }
+}
+
+
+@media (max-width:500px) {
+    .intro ul{
+        padding-left: 2rem;
+    }
+    .container{
+        height: max-content;
+    }
+}
+
+
+@media (max-width:950px) {
+    .two-row,.three-row{
+        gap: 2.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    background-attachment: scroll;
+    background-position: 70% center;
+  }
 }

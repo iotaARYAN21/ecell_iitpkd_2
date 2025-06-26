@@ -17,6 +17,8 @@ app.post('/submit', (req, res) => {
     auth:{
         user:'aryan0312g@gmail.com',
         pass:'ayaexuvllakicvjp'
+        // user:'112301041@smail.iitpkd.ac.in',
+        // pass:'bstvterxlrchhajn',
     }
   });
 

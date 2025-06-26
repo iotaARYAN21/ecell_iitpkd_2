@@ -7,8 +7,10 @@ const Footer = () => {
     <footer>
         <div className="footer_div1">
             <div className="footer_r1">
-            <img src="./ecell_final_logo.png" alt="logo" />
-            <h3>E-Cell IIT PALAKKAD</h3>
+            <div className="ecell-logo-container ">
+                <img src="./lg.png" alt="" className="ecell-logo" /> 
+            </div>
+            <h3 >E-Cell IIT PALAKKAD</h3>
             <h3>The Fire Within</h3>
             </div>
             <div className="footer_r2">

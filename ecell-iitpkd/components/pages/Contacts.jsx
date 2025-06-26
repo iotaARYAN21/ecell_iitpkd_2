@@ -35,7 +35,7 @@ function Contacts(){
         // alert(err.message);
     }
   }
-    return <>
+    return <div className="contact_form">
         <form onSubmit={handleSubmit(sendData)} >
         <h1>SEND US A MESSAGE</h1>
         <input type="text" placeholder="Name" {...register('name',
@@ -61,7 +61,7 @@ function Contacts(){
         </div>
     </form>
     <Footer/>
-    </>
+    </div>
     //TODO 
     //TODO1 : to make send functionality work  ->DONE
     //TODO2 : add toaster if the input requirement is not fulfilled

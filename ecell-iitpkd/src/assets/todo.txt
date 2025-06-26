@@ -4,3 +4,6 @@ for smaller screen widths make the user card show the contact details by default
 
 for the contact form , use the mail id of ecell
 for the event calendar , use the google calendar api of ecell
+change the photos of the events
+
+navbar ->done

@@ -1,22 +1,16 @@
-.container{
-    /* margin-top:100px ; */
-    height: 500px;
-    width: 100%;
-    overflow-y: auto;
-    scrollbar-width: none;
-    /* border: 1px solid white; */
-}
+
 .content{
     /* margin-top: 100px; */
     position: sticky;
     top: 0;
-    height: 25em;
-    margin-top: 2rem;
+    /* height: 25em; */
+    margin-top: 2rem;   
     margin-bottom: 5rem ;
     width: auto;
     display: flex;
     justify-content: space-around  ;
-    align-items: center;
+    /* border: 2px solid green; */
+    /* align-items: center; */
 }
 
 .card{
@@ -27,7 +21,7 @@
     /* margin: 50px auto; */
     width: 20em;
     background-color: white;
-    margin: 150px 20px;
+    /* margin: 150px 20px; */
     border-radius: 5px ;
     box-shadow: 0 -5px 10px black , 0 5px 10px white;
     color: black;
@@ -82,4 +76,54 @@
 }
 .description p{
     font-size: 1.3em;
+}
+
+
+
+
+
+@media (max-width:850px) {
+    /* .content{
+        position: static;
+    } */
+     .card{
+        height: 100px;
+        width: 100px;
+     }
+     .card {
+        margin: 2rem 1rem;
+     }
+     .description{
+        width: 400px;
+     }
+     .description h1{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+     }
+}
+@media (max-width:600px) {
+    .content{
+        position: static;
+        display: flex;
+        flex-direction:  column;
+        margin: 5rem 0;
+        gap: 2rem  ;
+        align-items: center ;
+    }
+    .card{
+        height: 20rem;
+        width: 20rem;
+        top: auto !important;
+        /* display: none; */
+    }
+    .description{
+        height: 20rem;
+        padding-bottom: 1rem ;
+        width: 20rem; 
+        margin: 1rem 1rem;
+    }
+    .homeContent h1{
+        font-size: 2.4rem;
+        padding-left: 0.5em;
+    }
 }

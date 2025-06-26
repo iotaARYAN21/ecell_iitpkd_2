@@ -2,7 +2,7 @@
   position: fixed;
   top: 10%;
   right: 0;
-  height: 85%;
+  height: auto ;
   width: 70%;
   background-color: #1b1b1b;
   color: white;
@@ -82,4 +82,9 @@
   .rbc-time-view{
     width: 20rem !important;
   }
+}
+
+.rbc-date-cell button{
+  max-width: 100%;
+  text-align: center;
 }

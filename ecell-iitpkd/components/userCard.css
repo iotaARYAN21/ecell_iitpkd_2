@@ -110,6 +110,14 @@
     height: 20px;
     width: 30px;
 }
+
+@media (max-width:900px) {
+    .user_card{
+        height: 200px;
+        width: 200px;
+        /* gap: 1rem; */
+    }
+}
 @media (max-width:800px){
     .socials h3{
         visibility: hidden;

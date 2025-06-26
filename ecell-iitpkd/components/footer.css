@@ -10,6 +10,9 @@ footer{
     display: flex;
     justify-content: space-evenly;
 }
+/* .footer_r1 h3{
+    padding-left: 1.3rem;
+} */
 .footer_div2{
     /* color: white; */
     padding: 1rem;
@@ -18,12 +21,12 @@ footer{
 ul{
     list-style: none;
 }
-.footer_r1 img{
-    height: 10rem;
+/* .footer_r1 img{
+    height: 15rem;
     border-radius: 5px;
     margin: 0;
     padding: 0;
-}
+} */
 /* .footer_r2  , .footer_r3, .footer_r4{
     height: 100%;
 } */
@@ -56,7 +59,36 @@ ul{
 .footer_r2 a > img{
     height: 2.5rem;
 }
-@media (max-width:850px) {
+
+li Link{
+    text-decoration: none;
+    color: orange;
+}
+
+
+/* logo */
+.ecell-logo-container {
+  background-color: #fdfaf5; /* Light warm beige */
+  padding: 20px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05); /* optional soft glow */
+}
+
+.ecell-logo {
+  width: 10rem;
+  height: 10rem;
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.4));
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.ecell-logo:hover {
+  transform: scale(1.05);
+}
+
+/* @media (max-width:850px) {
     .footer_r1 img{
     height: 10rem;
     margin: 0;
@@ -68,9 +100,138 @@ ul{
     .footer_r4{
         margin-left: 1rem;
     }
-    
+    .ecell-logo-container{
+    padding: 10px;
+    max-width: 10rem;       
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;    
+    margin-top: 1rem;       
+    }
+    .ecell-logo{
+        width: 100%;     
+    height: 10rem;    
+    }
+} */
+
+
+
+
+
+/* -------- Tablet: max-width 850px -------- */
+@media (max-width: 850px) {
+  .footer_div1 {
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+    /* align-items: center; */
+    height: auto;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .footer_r1,
+  .footer_r2,
+  .footer_r3,
+  .footer_r4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer_r2 ul,
+  .footer_r3 ul {
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+
+  .footer_r2 ul li,
+  .footer_r3 ul li {
+    margin: 0.8rem 0;
+    font-size: 0.95rem;
+  }
+
+  .footer_r4 {
+    margin: 1rem 0;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer_r4 p {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 0 1rem;
+  }
+
+  .ecell-logo-container {
+    padding: 10px;
+    max-width: 8rem;
+    width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+
+  .ecell-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer_div2 {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+  }
 }
-li Link{
-    text-decoration: none;
-    color: orange;
+
+/* -------- Mobile: max-width 600px -------- */
+@media (max-width: 600px) {
+  .footer_div1 {
+    padding: 1.5rem 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .footer_r2 ul li,
+  .footer_r3 ul li {
+    font-size: 0.85rem;
+    margin: 0.6rem 0;
+  }
+
+  .footer_r4 p {
+    font-size: 0.85rem;
+  }
+
+  .footer_div2 {
+    font-size: 0.8rem;
+  }
+
+  .ecell-logo-container {
+    max-width: 6.5rem;
+    padding: 8px;
+  }
+}
+
+/* -------- Extra small screens: max-width 400px -------- */
+@media (max-width: 400px) {
+  .footer_div1 {
+    gap: 1rem;
+  }
+  .footer_r1 h3{
+    font-size: small;
+  }
+  .footer_r2 ul li,
+  .footer_r3 ul li {
+    font-size: 0.78rem;
+  }
+
+  .footer_r4 p {
+    font-size: 0.8rem;
+  }
+
+  .footer_div2 {
+    font-size: 0.75rem;
+  }
+
+  .ecell-logo-container {
+    max-width: 5.5rem;
+    padding: 6px;
+  }
 }

@@ -7,6 +7,7 @@ body{
   padding: 0;
 /* background-color:#1b1c1b; */
 scrollbar-color: #1b1b1b #fbc45e;
+scrollbar-width: none;
 overflow-x: hidden;
 /* color:#fbc45e; */
 background-color: #0c0c0c;
