@@ -66,7 +66,7 @@ function Home(){
 company might sustain in the market. Teams simulate running the startup, making real-time business decisions.</p>
                         </EventCard>
                         <EventCard image={startTank}>
-                            <h1 style={{paddingTop:'5rem' , fontFamily:"Cursive"}}>For all the events check out Events page</h1>
+                            <h1 style={{paddingTop:'5rem'}}>For all the events check out Events page</h1>
                     {/* <p>A platform for startups and businesses to showcase their innovations and connect with potential investors and customers. We shall be inviting startups from all across India and also those supported by E-Cells of other IITs.
                     </p> */}
                         </EventCard>
