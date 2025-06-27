@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import {NavLink , Link} from "react-router-dom";
 import { useState } from "react";
+import lg from "../src/assets/lg.png"
 function Navbar(){
     // whenever we are using react-router-dom components we have to wrap our entire app inside Browser router 
     // keeps track of different link and router that we have
@@ -12,7 +13,7 @@ function Navbar(){
     return <nav>
             <Link to="/" className="title">
                 <div className="nav-logo-container ">
-                    <img src="./lg.png" alt="" className="nav-logo" /> 
+                    <img src={lg} alt="" className="nav-logo" /> 
                 </div>
             </Link>
             {/* takes to homepage of the website */}

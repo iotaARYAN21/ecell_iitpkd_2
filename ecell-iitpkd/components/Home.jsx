@@ -7,7 +7,13 @@ import {useMediaQuery} from 'react-responsive';
 import UserCard from "./UserCard";
 import EventCard from "./EventCard";
 import Footer from "./Footer";
-// import arrow from "../public/arrow.png"
+
+// importing images
+import arrow from "../src/assets/arrow.png";
+import startTank from "../src/assets/startTank.jpg";
+import hackathon from "../src/assets/hackathon.jpg";
+import ideathon from "../src/assets/ideathon.jpg";
+
 function Home(){
     const introContent = useRef();
     const isMobile = useMediaQuery({maxWidth:600});
@@ -21,7 +27,7 @@ function Home(){
                 <h1 className="slide-up-text">Entrepreneurship Cell</h1>
                 <h1 className="slide-up-text">IIT Palakkad</h1>
                 {/* <div className="explore slide-up-text" ref={introContent} onClick={handleClick}><h3>Explore</h3></div> */}
-                <img src="/arrow.png" alt="" className="arrow"  onClick={handleClick}/>
+                <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
             </div>
             <div className="intro animate-elt" ref={introContent} >
                 <h1>About Us</h1>
@@ -46,20 +52,20 @@ function Home(){
                 <div className="events-activities">
                     <h1>Events & Activities</h1>
                     <div className="container">
-                        <EventCard image={'/startTank.jpg'}>
+                        <EventCard image={startTank}>
                             <h1>Start Tank</h1> 
                     <p>A live startup pitching session where participants present their ideas to investors. We plan to make this interesting by also allowing the audience to do bidding on each idea with virtual currency that we allot to them and the idea getting maximing investment from the audience wins a prize money and inturn the idea promises the people who bid that when it is officially launched as a product and its’ share value reaches beyond a threshold, it would give a share proportionate to the people who bid in it .</p>
                         </EventCard>
-                        <EventCard image='/hackathon.jpg'>
+                        <EventCard image={hackathon}>
                             <h1>Hackathon</h1>
                     <p>Teams will work on building prototypes and MVPs of innovative solutions.</p>
                         </EventCard>
-                        <EventCard image='/ideathon.jpg'>
+                        <EventCard image={ideathon}>
                              <h1>Ideathon</h1>
                     <p>Following up on a problem statement teams will have 24 hours to thrive and come up with a proper scratch to product plan and also how the
 company might sustain in the market. Teams simulate running the startup, making real-time business decisions.</p>
                         </EventCard>
-                        <EventCard image='/startTank.jpg'>
+                        <EventCard image={startTank}>
                             <h1 style={{paddingTop:'5rem' , fontFamily:"Cursive"}}>For all the events check out Events page</h1>
                     {/* <p>A platform for startups and businesses to showcase their innovations and connect with potential investors and customers. We shall be inviting startups from all across India and also those supported by E-Cells of other IITs.
                     </p> */}

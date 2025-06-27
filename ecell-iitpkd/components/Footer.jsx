@@ -1,6 +1,13 @@
 import React from 'react'
 import './footer.css'
 import { NavLink ,Link } from 'react-router-dom';
+
+// importing images
+import ig from "../src/assets/ig.svg";
+import linkedin from "../src/assets/linkedin.svg";
+import twitter from "../src/assets/twitter.svg";
+import yt from "../src/assets/yt.svg"
+
 const Footer = () => {
     const date = new Date().getFullYear();
   return (
@@ -16,10 +23,10 @@ const Footer = () => {
             <div className="footer_r2">
                 <ul>
                     <li><h3>Social Media</h3></li>
-                    <li><a href="https://www.instagram.com/ecell_iitpkd?igsh=MXg1b3RjYzlibXU5dg==" target="_blank"><img src="../ig.svg" alt="" /></a></li>
-                    <li><a href="https://www.linkedin.com/company/ecell-iitpkd/" target="_blank"><img src="../linkedin.svg" alt="" /></a></li>
-                    <li><a href="https://x.com/E_Cell_IITPKD" target="_blank"><img src="../twitter.svg" alt="" /></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCMBYD5neK0bhsYHuios9KPw" target="_blank"><img src="../yt.svg" alt="" /></a></li>
+                    <li><a href="https://www.instagram.com/ecell_iitpkd?igsh=MXg1b3RjYzlibXU5dg==" target="_blank"><img src={ig} alt="" /></a></li>
+                    <li><a href="https://www.linkedin.com/company/ecell-iitpkd/" target="_blank"><img src={linkedin} alt="" /></a></li>
+                    <li><a href="https://x.com/E_Cell_IITPKD" target="_blank"><img src={twitter} alt="" /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCMBYD5neK0bhsYHuios9KPw" target="_blank"><img src={yt} alt="" /></a></li>
                 </ul>
             </div>
             <div className="footer_r3">
