@@ -34,6 +34,13 @@ const images = Object.fromEntries(
 
 const teamData = [
     {
+        name:'Siddharth Bharti',
+        role:'Head',
+        image:'',
+        mail:'',
+        linkedin:''
+    },
+    {
         name:'Aryan Mathur',
         role:'Mentor',
         image:images['ARYAN_MATHUR.jpg'],
@@ -41,7 +48,7 @@ const teamData = [
         linkedin:''
     },
     {
-        name:'Joy',
+        name:'Joy Patel',
         role:'Mentor',
         image:images['JOY.jpg'],
         mail:'',
@@ -140,8 +147,8 @@ const teamData = [
         linkedin:''
     },
     {
-        name:'Technical Team Lead',
-        role:'Aryan',
+        name:'Aryan',
+        role:'Technical Team Lead',
         image:images['Aryan.jpg'],
         mail:'',
         linkedin:''
@@ -153,13 +160,7 @@ const teamData = [
         mail:'',
         linkedin:''
     },
-    {
-        name:'Aashish Ev',
-        role:'Design Head',
-        image:'',
-        mail:'',
-        linkedin:''
-    }
+    
 ]
 
 export default teamData;

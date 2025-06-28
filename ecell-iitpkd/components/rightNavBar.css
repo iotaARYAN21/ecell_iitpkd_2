@@ -88,3 +88,16 @@
   max-width: 100%;
   text-align: center;
 }
+
+@media (max-width:600px) {
+  .right-tab{
+    width: 90%;
+  }
+  
+}
+@media (max-width:300px) {
+  .right-tab{
+    width: 100%;
+  }
+  
+}

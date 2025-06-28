@@ -13,7 +13,10 @@ import arrow from "../src/assets/arrow.png";
 import startTank from "../src/assets/startTank.jpg";
 import hackathon from "../src/assets/hackathon.jpg";
 import ideathon from "../src/assets/ideathon.jpg";
-
+import rocket from "../src/assets/rocket.mp4";
+import idea from "../src/assets/ideathon.mp4";
+import readMore from "../src/assets/read-more.mp4";
+import hackathonVideo from "../src/assets/hackathon.mp4";
 import teamData from "../Backend/teamData25.js"
 function Home(){
     const introContent = useRef();
@@ -54,20 +57,20 @@ function Home(){
                 <div className="events-activities">
                     <h1>Events & Activities</h1>
                     <div className="container">
-                        <EventCard image={startTank}>
+                        <EventCard vid={rocket}>
                             <h1>Start Tank</h1> 
                     <p>A live startup pitching event where participants present ideas to investors and the audience. Each audience member gets virtual currency to bid on ideas they like. The idea with the highest audience investment wins a prize. If that idea later launches and its share value crosses a set threshold, early audience backers receive proportional shares.</p>
                         </EventCard>
-                        <EventCard image={hackathon}>
+                        <EventCard vid={hackathonVideo}>
                             <h1>Hackathon</h1>
                     <p>Teams will work on building prototypes and MVPs of innovative solutions.</p>
                         </EventCard>
-                        <EventCard image={ideathon}>
+                        <EventCard vid={idea}>
                              <h1>Ideathon</h1>
                     <p>Following up on a problem statement teams will have 24 hours to thrive and come up with a proper scratch to product plan and also how the
 company might sustain in the market. Teams simulate running the startup, making real-time business decisions.</p>
                         </EventCard>
-                        <EventCard image={startTank}>
+                        <EventCard vid={readMore}>
                             <h1 style={{paddingTop:'5rem'}}>For all the events check out Events page</h1>
                     {/* <p>A platform for startups and businesses to showcase their innovations and connect with potential investors and customers. We shall be inviting startups from all across India and also those supported by E-Cells of other IITs.
                     </p> */}
@@ -77,9 +80,9 @@ company might sustain in the market. Teams simulate running the startup, making 
                 <div className="team">
                     <h1>Our Team</h1>
                     <div className="two-row">
-                        <UserCard />
-                        <UserCard/>
-                        {/* {teamData.slice(0,2).map((member,index)=>{
+                        {/* <UserCard />
+                        <UserCard/> */}
+                        {teamData.slice(0,2).map((member,index)=>(
                             <UserCard
                                 key={index}
                                 name={member.name}
@@ -88,7 +91,7 @@ company might sustain in the market. Teams simulate running the startup, making 
                                 mail={member.mail}
                                 linkedin={member.linkedin}
                             />
-                        })} */}
+                        ))}
 
 
                         {/* <div className="member">
@@ -98,9 +101,20 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
+
+                        {teamData.slice(2,5).map((member,index)=>(
+                            <UserCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                mail={member.mail}
+                                linkedin={member.linkedin}
+                            />
+                        ))}
+                        {/* <UserCard/>
                         <UserCard/>
-                        <UserCard/>
-                        <UserCard/>
+                        <UserCard/> */}
                         {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
@@ -118,9 +132,19 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
+                        {teamData.slice(5,8).map((member,index)=>(
+                            <UserCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                mail={member.mail}
+                                linkedin={member.linkedin}
+                            />
+                        ))}
+                        {/* <UserCard/>
                         <UserCard/>
-                        <UserCard/>
-                        <UserCard/>
+                        <UserCard/> */}
                         {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
@@ -138,9 +162,19 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
+                        {teamData.slice(8,11).map((member,index)=>(
+                            <UserCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                mail={member.mail}
+                                linkedin={member.linkedin}
+                            />
+                        ))}
+                        {/* <UserCard/>
                         <UserCard/>
-                        <UserCard/>
-                        <UserCard/>
+                        <UserCard/> */}
                         {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
@@ -158,9 +192,19 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
+                        {teamData.slice(11,14).map((member,index)=>(
+                            <UserCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                mail={member.mail}
+                                linkedin={member.linkedin}
+                            />
+                        ))}
+                        {/* <UserCard/>
                         <UserCard/>
-                        <UserCard/>
-                        <UserCard/>
+                        <UserCard/> */}
                         {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
@@ -178,9 +222,19 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
+                        {teamData.slice(14,17).map((member,index)=>(
+                            <UserCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                mail={member.mail}
+                                linkedin={member.linkedin}
+                            />
+                        ))}
+                        {/* <UserCard/>
                         <UserCard/>
-                        <UserCard/>
-                        <UserCard/>
+                        <UserCard/> */}
                         {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
@@ -198,9 +252,10 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
+                        
+                        {/* <UserCard/>
                         <UserCard/>
-                        <UserCard/>
-                        <UserCard/>
+                        <UserCard/> */}
                         {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>
@@ -218,8 +273,18 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="two-row">
-                        <UserCard/>
-                        <UserCard/>
+                        {teamData.slice(17,19).map((member,index)=>(
+                            <UserCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                mail={member.mail}
+                                linkedin={member.linkedin}
+                            />
+                        ))}
+                        {/* <UserCard/>
+                        <UserCard/> */}
                         {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>

@@ -3,7 +3,8 @@ import "./eventCard.css"
 const EventCard = (props) => {
   return (
     <div className="content">
-                <img src={props.image} alt="" className="card" />
+                {/* <img src={props.image} alt="" className="card" /> */}
+                <video src={props.vid} className='card' autoPlay loop muted playsInline></video>
                 <div className="description">
                     {props.children}
                 </div>

@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    /* flex-direction: row; */
     margin-bottom: 10rem;
 }
 .all-events > :nth-child(even){
@@ -46,7 +46,7 @@
 }
 .desc{
     padding-bottom: 1rem;
-    text-align: justify;
+    text-align: center;
   text-justify: inter-word; /* ensures spacing only happens between words */
   hyphens: auto;            /* allows breaking long words if needed */
   line-height: 1.6;         /* improves readability */
