@@ -188,7 +188,12 @@ li Link{
     padding: 1.5rem 0.5rem;
     gap: 1.5rem;
   }
-
+  .footer_r1{
+    padding-left: 1rem;
+  }
+  .footer_r1 h3{
+    font-size: x-small;
+  }
   .footer_r2 ul li,
   .footer_r3 ul li {
     font-size: 0.85rem;
@@ -214,8 +219,11 @@ li Link{
   .footer_div1 {
     gap: 1rem;
   }
+  .footer_r1{
+    padding-left: 1rem;
+  }
   .footer_r1 h3{
-    font-size: small;
+    font-size: x-small;
   }
   .footer_r2 ul li,
   .footer_r3 ul li {
@@ -226,14 +234,15 @@ li Link{
     font-size: 0.8rem;
   }
   .footer_r4 address{
-    padding-right: 0.5rem;
+    font-size: 0.8rem;
+    padding-right: 0.3rem;
   }
   .footer_div2 {
     font-size: 0.75rem;
   }
 
   .ecell-logo-container {
-    max-width: 3.5rem;
+    max-width: 3rem;
     padding: 6px;
   }
 }

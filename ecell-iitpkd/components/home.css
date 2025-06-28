@@ -278,6 +278,9 @@ h1,h2,h4,p{
 /* footer */
 
 @media (max-width:600px) {
+    .homeContent h1{
+        font-size: 2rem !important;
+    }
     .container{
         display: flex;
         flex-direction: column;
