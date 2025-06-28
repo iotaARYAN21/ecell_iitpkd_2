@@ -225,13 +225,15 @@ li Link{
   .footer_r4 p {
     font-size: 0.8rem;
   }
-
+  .footer_r4 address{
+    padding-right: 0.5rem;
+  }
   .footer_div2 {
     font-size: 0.75rem;
   }
 
   .ecell-logo-container {
-    max-width: 5.5rem;
+    max-width: 3.5rem;
     padding: 6px;
   }
 }

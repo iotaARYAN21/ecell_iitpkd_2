@@ -8,7 +8,7 @@ function AllEvents(){
                         <img src={startTank} alt="" className="card" />
                         <div className='event-content'>
                             <h1>Start Tank</h1>
-                            <p className="desc">A live startup pitching session where participants present their ideas to investors. We plan to make this interesting by also allowing the audience to do bidding on each idea with virtual currency that we allot to them and the idea getting maximing investment from the audience wins a prize money and inturn the idea promises the people who bid that when it is officially launched as a product and its’ share value reaches beyond a threshold, it would give a share proportionate to the people who bid in it . This will also have a registration fees.</p>
+                            <p className="desc">A live startup pitching event where participants present ideas to investors and the audience. Each audience member gets virtual currency to bid on ideas they like. The idea with the highest audience investment wins a prize. If that idea later launches and its share value crosses a set threshold, early audience backers receive proportional shares.</p>
                         </div>
                     </div>
                     <div className="event2">

@@ -169,8 +169,14 @@ h1,h2,h4,p{
     margin: 2rem ;
 }
 .intro > p , .vision p{
+    /* text-align: justify; */
   font-size:1.5rem;
   margin: 0 3rem;
+  text-align: justify;
+  text-justify: inter-word; /* ensures spacing only happens between words */
+  hyphens: auto;            /* allows breaking long words if needed */
+  line-height: 1.6;         /* improves readability */
+  word-spacing: normal; 
 }
 .intro ul{
     width: 100%;
@@ -315,6 +321,9 @@ h1,h2,h4,p{
         min-height: auto;
         margin-bottom: 2rem;
     }
+    .homeContent h1{
+        font-size: 2rem !important ;
+    }
 }
 @media (max-width:900px) {
     .team{
@@ -353,7 +362,7 @@ h1,h2,h4,p{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {   
   .home {
     background-attachment: scroll;
     background-position: 70% center;

@@ -112,7 +112,7 @@ nav .menu span{
   transition: transform 0.3s ease;
 }
 
-@media (max-width:600px){
+@media (max-width:800px){
     nav .menu{
         display: flex;
     }

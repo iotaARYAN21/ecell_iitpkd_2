@@ -14,6 +14,7 @@ import startTank from "../src/assets/startTank.jpg";
 import hackathon from "../src/assets/hackathon.jpg";
 import ideathon from "../src/assets/ideathon.jpg";
 
+import teamData from "../Backend/teamData25.js"
 function Home(){
     const introContent = useRef();
     const isMobile = useMediaQuery({maxWidth:600});
@@ -24,8 +25,9 @@ function Home(){
     return <div className="home">
         <div className="home-overlay">
             <div className="homeContent">
-                <h1 className="slide-up-text">Entrepreneurship Cell</h1>
-                <h1 className="slide-up-text">IIT Palakkad</h1>
+                <h1 className="slide-up-text"><span>Entrepreneurship Cell</span><br />
+  <span>IIT Palakkad</span></h1>
+                {/* <h1 className="slide-up-text">IIT Palakkad</h1> */}
                 {/* <div className="explore slide-up-text" ref={introContent} onClick={handleClick}><h3>Explore</h3></div> */}
                 <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
             </div>
@@ -54,7 +56,7 @@ function Home(){
                     <div className="container">
                         <EventCard image={startTank}>
                             <h1>Start Tank</h1> 
-                    <p>A live startup pitching session where participants present their ideas to investors. We plan to make this interesting by also allowing the audience to do bidding on each idea with virtual currency that we allot to them and the idea getting maximing investment from the audience wins a prize money and inturn the idea promises the people who bid that when it is officially launched as a product and its’ share value reaches beyond a threshold, it would give a share proportionate to the people who bid in it .</p>
+                    <p>A live startup pitching event where participants present ideas to investors and the audience. Each audience member gets virtual currency to bid on ideas they like. The idea with the highest audience investment wins a prize. If that idea later launches and its share value crosses a set threshold, early audience backers receive proportional shares.</p>
                         </EventCard>
                         <EventCard image={hackathon}>
                             <h1>Hackathon</h1>
@@ -75,8 +77,20 @@ company might sustain in the market. Teams simulate running the startup, making 
                 <div className="team">
                     <h1>Our Team</h1>
                     <div className="two-row">
+                        <UserCard />
                         <UserCard/>
-                        <UserCard/>
+                        {/* {teamData.slice(0,2).map((member,index)=>{
+                            <UserCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                mail={member.mail}
+                                linkedin={member.linkedin}
+                            />
+                        })} */}
+
+
                         {/* <div className="member">
                             <img src="./user.jpg" alt="user" />
                             <h4>John Doe</h4>

@@ -62,13 +62,18 @@
 
 .content > .description{
     background-color: #fbc45e;
-    height: 25em;
+    height: 30rem;
     max-width: 30em;
-    text-align: center;
+    /* text-align: center; */
     color: #1b1b1b;
     border: 5px solid white;
     border-radius:10px;
     box-shadow: 0 -5px 10px black , 5px 0 10px white , -5px 0 10px white;
+    text-align: justify;
+  text-justify: inter-word; /* ensures spacing only happens between words */
+  hyphens: auto;            /* allows breaking long words if needed */
+  line-height: 1.6;         /* improves readability */
+  word-spacing: normal; 
     /* margin-top: 50%; */
 }
 .description h1{

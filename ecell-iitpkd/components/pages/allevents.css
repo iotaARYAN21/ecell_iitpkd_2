@@ -44,6 +44,14 @@
     margin-bottom: 10rem;
     flex-direction: row-reverse;
 }
+.desc{
+    padding-bottom: 1rem;
+    text-align: justify;
+  text-justify: inter-word; /* ensures spacing only happens between words */
+  hyphens: auto;            /* allows breaking long words if needed */
+  line-height: 1.6;         /* improves readability */
+  word-spacing: normal; 
+}
 /* img,p{
     display: inline;
 }
