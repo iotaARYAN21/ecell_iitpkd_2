@@ -47,7 +47,7 @@ function Home(){
                         <li> Develop an MVP – Shape your idea into a working prototype.</li>
                         <li> Pitch to Investors – Gain access to funding and incubation.</li>
                     </ul>
-                </div>
+                 </div>
             </div>
             <div className="vision animate-elt">
                     <h1>Our Vision</h1> 
@@ -79,10 +79,22 @@ company might sustain in the market. Teams simulate running the startup, making 
                 </div>
                 <div className="team">
                     <h1>Our Team</h1>
+                    <div className="three-row">
+                        {teamData.slice(0,1).map((member,index)=>(
+                            <UserCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                mail={member.mail}
+                                linkedin={member.linkedin}
+                            />
+                        ))}
+                    </div>
                     <div className="two-row">
                         {/* <UserCard />
                         <UserCard/> */}
-                        {teamData.slice(0,2).map((member,index)=>(
+                        {teamData.slice(1,3).map((member,index)=>(
                             <UserCard
                                 key={index}
                                 name={member.name}
@@ -102,7 +114,7 @@ company might sustain in the market. Teams simulate running the startup, making 
                     </div>
                     <div className="three-row">
 
-                        {teamData.slice(2,5).map((member,index)=>(
+                        {teamData.slice(3,6).map((member,index)=>(
                             <UserCard
                                 key={index}
                                 name={member.name}
@@ -132,7 +144,7 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
-                        {teamData.slice(5,8).map((member,index)=>(
+                        {teamData.slice(6,9).map((member,index)=>(
                             <UserCard
                                 key={index}
                                 name={member.name}
@@ -162,7 +174,7 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
-                        {teamData.slice(8,11).map((member,index)=>(
+                        {teamData.slice(9,12).map((member,index)=>(
                             <UserCard
                                 key={index}
                                 name={member.name}
@@ -192,7 +204,7 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
-                        {teamData.slice(11,14).map((member,index)=>(
+                        {teamData.slice(12,15).map((member,index)=>(
                             <UserCard
                                 key={index}
                                 name={member.name}
@@ -222,7 +234,7 @@ company might sustain in the market. Teams simulate running the startup, making 
                         </div> */}
                     </div>
                     <div className="three-row">
-                        {teamData.slice(14,17).map((member,index)=>(
+                        {teamData.slice(15,18).map((member,index)=>(
                             <UserCard
                                 key={index}
                                 name={member.name}
@@ -251,28 +263,8 @@ company might sustain in the market. Teams simulate running the startup, making 
                             <p>Role</p>
                         </div> */}
                     </div>
-                    <div className="three-row">
-                        
-                        {/* <UserCard/>
-                        <UserCard/>
-                        <UserCard/> */}
-                        {/* <div className="member">
-                            <img src="./user.jpg" alt="user" />
-                            <h4>John Doe</h4>
-                            <p>Role</p>
-                        </div>
-                        <div className="member">
-                            <img src="./user.jpg" alt="user" />
-                            <h4>John Doe</h4>
-                            <p>Role</p>
-                        </div>
-                        <div className="member">
-                            <img src="./user.jpg" alt="user" />
-                            <h4>John Doe</h4>
-                            <p>Role</p>
-                        </div> */}
-                    </div>
-                    <div className="two-row">
+                    
+                    {/* <div className="two-row">
                         {teamData.slice(17,19).map((member,index)=>(
                             <UserCard
                                 key={index}
@@ -283,19 +275,8 @@ company might sustain in the market. Teams simulate running the startup, making 
                                 linkedin={member.linkedin}
                             />
                         ))}
-                        {/* <UserCard/>
-                        <UserCard/> */}
-                        {/* <div className="member">
-                            <img src="./user.jpg" alt="user" />
-                            <h4>John Doe</h4>
-                            <p>Role</p>
-                        </div>
-                        <div className="member">
-                            <img src="./user.jpg" alt="user" />
-                            <h4>John Doe</h4>
-                            <p>Role</p> 
-                        </div> */}
-                    </div>
+                        
+                    </div> */}
                 </div>
                 {/* <footer>
                     

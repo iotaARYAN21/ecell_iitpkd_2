@@ -13,6 +13,8 @@ import productLaunch from "../../src/assets/productLaunch.mp4";
 import techWork from "../../src/assets/techWorkshop.mp4";
 import techXpo from "../../src/assets/techXpo.mp4";
 import trading from "../../src/assets/trading.mp4";
+import startupExpo from "../../src/assets/startupExpo.mp4";
+
 function AllEvents(){
     return <>
         <div className="all-events">
@@ -24,7 +26,7 @@ function AllEvents(){
                         </div>
                     </div>
                     <div className="event2">
-                        <video src={rocket} className='card' autoPlay loop muted playsInline></video>
+                        <video src={startupExpo} className='card' autoPlay loop muted playsInline></video>
                         <div className='event-content'>
                             <h1>Startup Expo</h1>
                         <p className="desc">A platform for startups and businesses to showcase their innovations and connect with potential investors and customers. We shall be inviting startups from all across India and also those supported by E-Cells of other IITs.</p>
