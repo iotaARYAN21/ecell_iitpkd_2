@@ -51,7 +51,7 @@
     /* transform: rotate(180deg); */
     /* display: block; */
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     right: 20px;
     animation: upDown 2s alternate infinite ease-in-out ;
 }
@@ -280,6 +280,9 @@ h1,h2,h4,p{
 /* footer */
 
 @media (max-width:700px) {
+    /* .arrow{
+        bottom: 60px;
+    } */
     .text , .text>*{
         font-size: 1rem !important ;
         

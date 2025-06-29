@@ -62,7 +62,7 @@
 
 .content > .description{
     background-color: #fbc45e;
-    height:30rem;
+    height:25rem;
     max-width: 30em;
     /* text-align: center; */
     color: #1b1b1b;
@@ -122,7 +122,7 @@
         /* display: none; */
     }
     .description{
-        height: 20rem;
+        height: 30rem !important;
         padding-bottom: 1rem ;
         width: 20rem; 
         margin: 1rem 1rem;
