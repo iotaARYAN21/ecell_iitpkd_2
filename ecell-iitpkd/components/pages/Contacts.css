@@ -1,5 +1,5 @@
 .contact_form{
-    height: 100vh;
+    height: auto;
     /* width: ; */
     display: flex;
     flex-direction: column;
@@ -22,9 +22,16 @@ input{
     height: 40px;
 }
 button{
-    width: 100%;
+    background-color: #ffb007;
+    width: 50%;
     height: 40px;
     border-radius: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+button:hover{
+    cursor:pointer
 }
 .btn{
     text-align: center;

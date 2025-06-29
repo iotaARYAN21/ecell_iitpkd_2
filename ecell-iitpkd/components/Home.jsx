@@ -36,13 +36,13 @@ function Home(){
             </div>
             <div className="intro animate-elt" ref={introContent} >
                 <h1>About Us</h1>
-                <p>E-Cell IIT Palakkad is a student-driven initiative that nurtures the spirit of entrepreneurship through events, mentorship, and hands-on support.
+                <p className="text">E-Cell IIT Palakkad is a student-driven initiative that nurtures the spirit of entrepreneurship through events, mentorship, and hands-on support.
                     At the core is <b>SURGE</b> ("Startup Upscaling and Resource Growth Engine")—a dynamic team of students, faculty, alumni, and experts from TechIn, IPTIF, and the CSquare Innovation Lab—dedicated to turning ideas into startups.
                 </p>
                 <h2>Got an idea? SURGE will help you:</h2>
                 <div className="list">
-                    <ul>
-                        <li> Build Your Team – Connect with coders, designers, and doers.</li>
+                    <ul className="text">
+                        <li > Build Your Team – Connect with coders, designers, and doers.</li>
                         <li> Get Mentored – Guidance from industry pros, professors, and alumni.</li>
                         <li> Develop an MVP – Shape your idea into a working prototype.</li>
                         <li> Pitch to Investors – Gain access to funding and incubation.</li>
@@ -51,7 +51,7 @@ function Home(){
             </div>
             <div className="vision animate-elt">
                     <h1>Our Vision</h1> 
-                    <p>The Entrepreneurship Cell of IIT Palakkad envisions building a thriving entrepreneurial ecosystem within the institute. With the launch of its flagship event, the E-Summit 2026, the E-Cell aims to position the institute as a hub of innovation and entrepreneurship. The vision is to empower students by providing them with real-world exposure, mentorship, and resources necessary to transform ideas into impactful ventures. Through national-level competitions, networking events, and collaborations with industry leaders, IIT Palakkad E-Cell seeks to inspire the next generation of entrepreneurs and foster a culture of creative problem-solving and startup excellence.
+                    <p className="text">The Entrepreneurship Cell of IIT Palakkad envisions building a thriving entrepreneurial ecosystem within the institute. With the launch of its flagship event, the E-Summit 2026, the E-Cell aims to position the institute as a hub of innovation and entrepreneurship. The vision is to empower students by providing them with real-world exposure, mentorship, and resources necessary to transform ideas into impactful ventures. Through national-level competitions, networking events, and collaborations with industry leaders, IIT Palakkad E-Cell seeks to inspire the next generation of entrepreneurs and foster a culture of creative problem-solving and startup excellence.
                     </p>
                 </div>
                 <div className="events-activities">

@@ -62,7 +62,7 @@
 
 .content > .description{
     background-color: #fbc45e;
-    height:25rem;
+    height:30rem;
     max-width: 30em;
     /* text-align: center; */
     color: #1b1b1b;
@@ -106,7 +106,7 @@
         margin-bottom: 1rem;
      }
 }
-@media (max-width:600px) {
+@media (max-width:700px) {
     .content{
         position: static;
         display: flex;
