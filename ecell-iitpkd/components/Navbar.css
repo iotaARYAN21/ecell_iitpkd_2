@@ -54,15 +54,16 @@ nav ul li a{
     color: #fbc45e;
     margin: 0 0.5rem;
     padding: 0.5rem;
-    /* border-radius: 0.5rem; */
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 5px;
 } 
 /* :not()  is a pseudo selector*/
 nav ul li a:not(.active):hover{
     /* border-bottom-color: #172554; */
     /* border-bottom: 2px solid white; */
-    background-color: #ffdea1;
+    background-color: #ed9d09;
     color: #1b1b1b;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 
 nav .menu{

@@ -8,6 +8,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
+     font-size: 1rem;
      /* overflow: auto; */
      /* justify-content: center; */
     /* box-sizing: border-box; */
@@ -51,6 +52,8 @@
   hyphens: auto;            /* allows breaking long words if needed */
   line-height: 1.6;         /* improves readability */
   word-spacing: normal; 
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 /* img,p{
     display: inline;
@@ -69,7 +72,7 @@ p{
     width: 70rem;
 }
 
-@media (max-width:900px) {
+@media (max-width:920px) {
     .card{
         width: 20rem;
         height: 20rem;

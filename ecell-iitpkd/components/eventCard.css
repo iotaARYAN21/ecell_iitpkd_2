@@ -35,7 +35,7 @@
 .content:nth-child(4){
     top: 60px;
 }
-.content:nth-child(5){
+/* .content:nth-child(5){
     top:80px
 }
 .content:nth-child(6){
@@ -58,23 +58,29 @@
 }
 .content:nth-child(12){
     top:240px
-}
+} */
 
 .content > .description{
-    background-color: #fbc45e;
+    /* background-color: #fbc45e; */
     height:25rem;
-    max-width: 30em;
+    width: 25rem;
+    max-width: 25rem;
     /* text-align: center; */
     color: #1b1b1b;
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius:10px;
-    box-shadow: 0 -5px 10px black , 5px 0 10px white , -5px 0 10px white;
+    box-shadow: 0 -5px 10px black ;
     text-align: justify;
   text-justify: inter-word; /* ensures spacing only happens between words */
   hyphens: auto;            /* allows breaking long words if needed */
   line-height: 1.6;         /* improves readability */
   word-spacing: normal; 
     /* margin-top: 50%; */
+
+    background: #f46b45;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .description h1{
     font-size: 1.7em;
@@ -85,7 +91,12 @@
 
 
 
-
+@media (min-width:700px){
+    .content{
+        margin-top: 7rem ;
+        margin-bottom: 4rem;
+    }
+}
 
 @media (max-width:850px) {
     /* .content{

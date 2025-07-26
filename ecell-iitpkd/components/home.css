@@ -156,9 +156,9 @@ h1,h2,h4,p{
   /* font-size: 3rem; */
   padding: 2rem 0;
   font-weight: 900;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
-.events-activities h1{
+.events-activities > h1{
     margin-top: 4rem;
     margin-bottom:2rem ;
     padding: 0;
@@ -207,7 +207,7 @@ h1,h2,h4,p{
 
 /* Event and activities */
 .container{
-    height: 500px;
+    height: 600px;
     width: 100%;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -375,4 +375,34 @@ h1,h2,h4,p{
     .home{
         background-position: center 30%  !important;
     }
+}
+
+
+
+
+
+/* h1{
+    background: linear-gradient(to top ,yellow,orange,red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} */
+/* .heading{
+    background-image:linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} */
+
+.bodoni-moda-sc-heading {
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }

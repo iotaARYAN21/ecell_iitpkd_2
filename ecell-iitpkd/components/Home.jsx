@@ -28,14 +28,14 @@ function Home(){
     return <div className="home">
         <div className="home-overlay">
             <div className="homeContent">
-                <h1 className="slide-up-text"><span>Entrepreneurship Cell</span><br />
+                <h1 className="slide-up-text  "><span>Entrepreneurship Cell</span><br />
   <span>IIT Palakkad</span></h1>
                 {/* <h1 className="slide-up-text">IIT Palakkad</h1> */}
                 {/* <div className="explore slide-up-text" ref={introContent} onClick={handleClick}><h3>Explore</h3></div> */}
                 <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
             </div>
             <div className="intro animate-elt" ref={introContent} >
-                <h1>About Us</h1>
+                <h1 className="heading">About Us</h1>
                 <p className="text">E-Cell IIT Palakkad is a student-driven initiative that nurtures the spirit of entrepreneurship through events, mentorship, and hands-on support.
                     At the core is <b>SURGE</b> ("Startup Upscaling and Resource Growth Engine")—a dynamic team of students, faculty, alumni, and experts from TechIn, IPTIF, and the CSquare Innovation Lab—dedicated to turning ideas into startups.
                 </p>

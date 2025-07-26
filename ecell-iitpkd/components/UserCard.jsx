@@ -13,7 +13,7 @@ const UserCard = (props) => {
             <h3>{props.name}</h3>
             <h4>{props.role}</h4>
             <div className="socials">
-                <h3 >socials</h3>
+                <h3 >Socials</h3>
                 <ul >
                     {/* <li><a href="" className='card_a'><img src="../usercard_ig.svg" alt="insta" /></a></li> */}
                     <li><a href={props.linkedin} className='card_a' target='_blank'><img src={userLinkedIn} alt="linkedin" /></a></li>
