@@ -36,9 +36,16 @@ const teamData = [
     {
         name:'Siddharth Bharti',
         role:'Head',
-        image:'',
-        mail:'',
-        linkedin:''
+        image:images['siddharthBharti2.jpg'],
+        mail:'132301033@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in/siddharth-kr-997667249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    },
+    {
+        name:'Prof. Mayank Tiwari',
+        role:'Faculty Advisor',
+        image:images['ProfMayankSir.jpg'],
+        mail:'mayank@iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in/mayank-tiwari-3301268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         name:'Aryan Mathur',
@@ -115,8 +122,8 @@ const teamData = [
         name:'Ashish Kumar',
         role:'Hospitality Team Lead',
         image:images['Ashish_Kumar.jpg'],
-        mail:'',
-        linkedin:''
+        mail:'102201032@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in'
     },
     {
         name:'Aman Meena',
@@ -159,6 +166,13 @@ const teamData = [
         image:images['Jugdeep.jpg'],
         mail:'122301017@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/jugdeep-roy-a6a012368'
+    },
+    {
+        name:'Ankit Gupta',
+        role:'Design Head',
+        image:images['Ankit.jpg'],
+        mail:'112301010@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in/ankit-gupta-414313281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     
 ]

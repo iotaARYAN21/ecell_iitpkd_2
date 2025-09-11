@@ -356,7 +356,7 @@ h1,h2,h4,p{
 }
 
 
-@media (max-width: 800px),(max-height:400px){   
+@media (max-width: 920px),(max-height:400px){   
   .home {
     background-attachment: scroll;
     background-position: 70% center;
@@ -366,7 +366,12 @@ h1,h2,h4,p{
     /* font-style: italic; */
     color: white;
 }
-
+@media (max-width:400px) {
+    .home{
+        background-attachment: scroll;
+        background-position: 65% center;
+    }
+}
 
 @media (max-height:400px) {
     .homeContent h1{

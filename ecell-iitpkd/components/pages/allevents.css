@@ -62,7 +62,20 @@ p{
     vertical-align: text-top;
     margin: 0;
 } */
-
+.card{
+    /* border: 2px solid green; */
+    /* position: sticky;
+    top: 0; */
+    height: 25em;
+    /* margin: 50px auto; */
+    width: 20em;
+    background-color: white;
+    /* margin: 150px 20px; */
+    border-radius: 5px ;
+    box-shadow: 0 -5px 10px black , 0 5px 10px white;
+    color: black;
+    
+}
 .event1{
     margin-top: 10rem;
 }
@@ -105,6 +118,6 @@ p{
         display: flex;
         flex-direction:column ;
         width: 15rem;
-        height: auto;
+        height: auto ;
     }
 }
