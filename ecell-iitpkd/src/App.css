@@ -6,14 +6,16 @@ body{
   margin: 0;
   padding: 0;
 /* background-color:#1b1c1b; */
-scrollbar-color: #1b1b1b #fbc45e;
+scrollbar-color: #2C5364 #EAF6FB;
 scrollbar-width: none;
 overflow-x: hidden;
 /* color:#fbc45e; */
-background-color: #0c0c0c;
-color: #ffb007;
---text-secondary: #cccccc;
---border-color: #2c2c2c;
+/* background-color: #0F2027; */
+/* background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%); */
+background: #1B2E38;
+color: #EAF6FB;
+--text-secondary: #d71b1b;
+--border-color: #c71d1d;
 
 /* background-image: url('../public/bg.jpg');
 background-size: cover;

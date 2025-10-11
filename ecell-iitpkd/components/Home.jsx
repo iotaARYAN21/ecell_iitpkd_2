@@ -9,10 +9,12 @@ import UserCard from "./UserCard";
 import Footer from "./Footer";
 
 // importing images
-import arrow from "../src/assets/arrow.png";
-import startTank from "../src/assets/startTank.jpg";
-import hackathon from "../src/assets/hackathon.jpg";
-import ideathon from "../src/assets/ideathon.jpg";
+import arrow from "../src/assets/arrow2.svg";
+import ecellHome from '../src/assets/ecell_home2.png'
+import startTank from "../src/assets/startTank2.jpg";
+import hackathon from "../src/assets/hackathon2.jpg";
+import ideathon from "../src/assets/ideathon1.jpg";
+// import productLa from "../src/assets/ideathon1.jpg";
 import rocket from "../src/assets/rocket.mp4";
 import idea from "../src/assets/ideathon.mp4";
 import readMore from "../src/assets/read-more.mp4";
@@ -28,13 +30,22 @@ function Home(){
     
     return <div className="home">
         <div className="home-overlay">
-            <div className="homeContent">
+            <section class="hero-split">
+      <div class="hero-left">
+        <h1 className="slide-up-text  "><span>Entrepreneurship Cell</span><br />
+  <span>IIT Palakkad</span></h1>
+        <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
+      </div>
+      <div class="hero-right">
+        <img id="ecellHome" src={ecellHome} alt="" />
+      </div>
+    </section>
+
+            {/* <div className="homeContent">
                 <h1 className="slide-up-text  "><span>Entrepreneurship Cell</span><br />
   <span>IIT Palakkad</span></h1>
-                {/* <h1 className="slide-up-text">IIT Palakkad</h1> */}
-                {/* <div className="explore slide-up-text" ref={introContent} onClick={handleClick}><h3>Explore</h3></div> */}
                 <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
-            </div>
+            </div> */}
             <div className="intro animate-elt" ref={introContent} >
                 <h1 className="heading">About Us</h1>
                 <p className="text">E-Cell IIT Palakkad is a student-driven initiative that nurtures the spirit of entrepreneurship through events, mentorship, and hands-on support.
@@ -59,24 +70,6 @@ function Home(){
                 <div className="events-activities">
                     <h1>Events & Activities</h1>
                     <Carousel/>
-                    {/* <div className="container">
-                        <EventCard vid={rocket}>
-                            <h1>Start Tank</h1> 
-                    <p>A live startup pitching event where participants present ideas to investors and the audience. Each audience member gets virtual currency to bid on ideas they like. The idea with the highest audience investment wins a prize. If that idea later launches and its share value crosses a set threshold, early audience backers receive proportional shares.</p>
-                        </EventCard>
-                        <EventCard vid={hackathonVideo}>
-                            <h1>Hackathon</h1>
-                    <p>Teams will work on building prototypes and MVPs of innovative solutions.</p>
-                        </EventCard>
-                        <EventCard vid={idea}>
-                                <h1>Ideathon</h1>
-                        <p>Following up on a problem statement teams will have 24 hours to thrive and come up with a proper scratch to product plan and also how the
-    company might sustain in the market. Teams simulate running the startup, making real-time business decisions.</p>
-                        </EventCard>
-                        <EventCard vid={readMore}>
-                            <h1 style={{paddingTop:'5rem'}}>For all the events check out Events page</h1>
-                        </EventCard>
-                    </div> */}
                 </div>
                 <div className="team">
                     <h1>Our Team</h1>
@@ -173,20 +166,6 @@ function Home(){
                         ))}
                         
                     </div>
-{/*                     
-                    <div className="two-row">
-                        {teamData.slice(18,20).map((member,index)=>(
-                            <UserCard
-                                key={index}
-                                name={member.name}
-                                role={member.role}
-                                image={member.image}
-                                mail={member.mail}
-                                linkedin={member.linkedin}
-                            />
-                        ))}
-                        
-                    </div> */}
                 </div>
                 <Footer/>
         </div>

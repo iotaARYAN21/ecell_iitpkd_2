@@ -29,10 +29,10 @@ button{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1rem;
-
-     background: #f46b45;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #eea849, #f46b45); 
+    background-color: #EAF6FB   ;
+     /* background: #f46b45;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #eea849, #f46b45);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #eea849, #f46b45);  */
 }
 button:hover{
     cursor:pointer

@@ -16,11 +16,11 @@ function Contacts(){
 
   async function sendData(e){
     // e.preventDefault();
-    console.log(e);
-    // const formData = new FormData(e.target);
+    console.log(e.target);
+    // const formData = new FormData(e);
     try{
         const response = await axios.post(
-            'http://localhost:3000/submit',
+            'http://localhost:5000/submit',
             // Object.fromEntries(formData.entries())
             e
         );
@@ -28,7 +28,8 @@ function Contacts(){
     }catch(err){
         console.error('Error : ',err.response?.data || err.message);
     }
-  };
+    document.getElementById('contactForm').reset();
+  }
   function showToast(err){
     if(err){
         toast.error(err.message,{autoClose: 3000,});
@@ -36,7 +37,7 @@ function Contacts(){
     }
   }
     return <div className="contact_form">
-        <form onSubmit={handleSubmit(sendData)} >
+        <form onSubmit={handleSubmit(sendData)} id='contactForm' >
         <h1>SEND US A MESSAGE</h1>
         <input type="text" placeholder="Name" {...register('name',
             {

@@ -13,11 +13,13 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@react-email/components": "^0.5.5",
     "axios": "^1.9.0",
     "cors": "^2.8.5",
     "date-fns": "^4.1.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "gapi-script": "^1.2.0",
     "mail": "^0.2.3",
     "nodemailer": "^7.0.3",
     "react": "^19.1.0",
@@ -27,6 +29,7 @@
     "react-responsive": "^10.0.1",
     "react-router-dom": "^7.6.0",
     "react-toastify": "^11.0.5",
+    "resend": "^6.1.2",
     "swiper": "^11.2.10"
   },
   "devDependencies": {

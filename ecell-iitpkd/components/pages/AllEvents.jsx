@@ -1,46 +1,60 @@
 import "./allevents.css"
 import Footer from "../Footer";
-import startTank from  "../../src/assets/startTank.jpg";
+import startTank from  "../../src/assets/startTank2.jpg";
+import ideathon from  "../../src/assets/ideathon1.jpg";
+import hackathon from  "../../src/assets/hackathon2.jpg";
+import startupExpo from  "../../src/assets/startupExpo2.jpg";
+import productLaunch from  "../../src/assets/productLaunchChallenge.jpg";
+import businessPlan from  "../../src/assets/businessPlanExpo.jpg";
+
+
 import rocket from "../../src/assets/rocket.mp4";
-import idea from "../../src/assets/ideathon.mp4";
+// import idea from "../../src/assets/ideathon.mp4";
 import readMore from "../../src/assets/read-more.mp4";
-import hackathonVideo from "../../src/assets/hackathon.mp4";
-import business from "../../src/assets/business.mp4";
+// import hackathonVideo from "../../src/assets/hackathon.mp4";
+// import business from "../../src/assets/business.mp4";
 import investment from "../../src/assets/investment.mp4";
 import mun from "../../src/assets/mun.mp4";
 import networking from "../../src/assets/networking.mp4";
-import productLaunch from "../../src/assets/productLaunch.mp4";
+// import productLaunch from "../../src/assets/productLaunch.mp4";
 import techWork from "../../src/assets/techWorkshop.mp4";
 import techXpo from "../../src/assets/techXpo.mp4";
 import trading from "../../src/assets/trading.mp4";
-import startupExpo from "../../src/assets/startupExpo.mp4";
+// import startupExpo from "../../src/assets/startupExpo.mp4";
 
 function AllEvents(){
     return <>
         <div className="all-events">
                     <div className="event1">
-                        <video src={rocket} className='card' autoPlay loop muted playsInline></video>
+                        <img src={startTank} className="eventImg" alt="" />
+                        {/* <video src={rocket} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>Start Tank</h1>
                             <p className="desc">A live startup pitching event where participants present ideas to investors and the audience. Each audience member gets virtual currency to bid on ideas they like. The idea with the highest audience investment wins a prize. If that idea later launches and its share value crosses a set threshold, early audience backers receive proportional shares.</p>
                         </div>
                     </div>
                     <div className="event2">
-                        <video src={startupExpo} className='card' autoPlay loop muted playsInline></video>
+                        <img src={startupExpo} className="eventImg" alt="" />
+
+                        {/* <video src={startupExpo} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>Startup Expo</h1>
                         <p className="desc">A platform for startups and businesses to showcase their innovations and connect with potential investors and customers. We shall be inviting startups from all across India and also those supported by E-Cells of other IITs.</p>
                         </div>
                     </div>
                 <div className="event3">
-                    <video src={hackathonVideo} className='card' autoPlay loop muted playsInline></video>
+                        <img src={hackathon} className="eventImg" alt="" />
+
+                    {/* <video src={hackathonVideo} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>Technical Hackathon (48-hour challenge)</h1>
                         <p className="desc">Teams will work on building prototypes and MVPs of innovative solutions.</p>
                         </div>
                 </div>
                 <div className="event4">
-                    <video src={idea} className='card' autoPlay loop muted playsInline></video>
+                        <img src={ideathon} className="eventImg" alt="" />
+
+                    {/* <video src={idea} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>IdeaThon (24 Hour Challenge)</h1>
                         <p className="desc">Following up on a problem statement teams will have 24 hours to thrive and come up with a proper scratch to product plan and also how the
@@ -55,14 +69,18 @@ function AllEvents(){
                         </div>
                 </div>
                 <div className="event6">
-                    <video src={business} className='card' autoPlay loop muted playsInline></video>
+                        <img src={businessPlan} className="eventImg" alt="" />
+                    
+                    {/* <video src={business} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>Business Plan Competition</h1>
                         <p className="desc">Teams will pitch a detailed business plan to a jury.</p>
                         </div>
                 </div>
                 <div className="event7">
-                    <video src={productLaunch} className='card' autoPlay loop muted playsInline></video>
+                        <img src={productLaunch} className="eventImg" alt="" />
+
+                    {/* <video src={productLaunch} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>Product Launch Challenge</h1>
                         <p className="desc">Teams work on branding, marketing, and sales strategies.</p>

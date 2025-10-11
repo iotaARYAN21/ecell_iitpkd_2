@@ -4,7 +4,7 @@
   right: 0;
   height: auto ;
   width: 70%;
-  background-color: #1b1b1b;
+  background-color: #1B2E38;
   color: white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -12,7 +12,7 @@
   transition: transform 0.3s ease;
   transform: translateX(100%);
   z-index: 1000;
-  border: 2px solid orange;
+  border: 2px solid #EAF6FB;
 }
 
 .right-tab.open {
@@ -29,7 +29,7 @@
   top: 42%;
   right: 0;
   /* transform: translateX(-100%); */
-  background-color: orange;
+  /* background-color:  #EAF6FB; */
   color: black;
   border: none;
   height: 50px;
@@ -45,38 +45,38 @@
 
 /* react big calendar */
 .rbc-calendar {
-  background-color: #1e1e1e;
-  color: orange;
+  background-color: #1B2E38;
+  color: #EAF6FB;
 }
 .rbc-timeslot-group {
   border-color: #444;
 }
 
 .rbc-month-view {
-  background-color: #0c0c0c;
-  color: orange;
+  background-color: #1B2E38;
+  color: #EAF6FB;
 }
 .rbc-event{
-  color: orange;
-  background-color: orange;
+  color: #EAF6FB;
+  background-color: #EAF6FB;
 }
 
 .rbc-toolbar button {
   width: max-content;
   background-color: #0c0c0c !important;
-  color: orange !important;
+  color: #EAF6FB !important;
 }
 .rbc-toolbar button:hover{
-  background-color: orange !important;
+  background-color: #EAF6FB !important;
   color: #0c0c0c !important;
 }
 .rbc-today {
   background-color: #636363 !important;
-  color: orange !important;
+  color: #EAF6FB !important;
 }
 
 .rbc-active{
-  border: 3px solid orange !important;
+  border: 3px solid #EAF6FB !important;
 }
 @media (max-width:800px){
   .rbc-time-view{
