@@ -26,7 +26,7 @@
     width: 25rem;
     position: relative;
     top: 10rem;
-    left: 15rem;
+    left: 10rem;
     /* border-radius: 5rem; */
     filter: brightness(1.5);
 }
@@ -57,20 +57,21 @@
     /* TODO -> arrow causing extra space on the right side on click ---> SOLVED*/
     height: 4rem;
     width: auto;
-    transform: rotate(180deg) !important;
+    /* transform: rotate(180deg); */
     /* display: block; */
-    z-index: 1;
+    z-index: 999;
     position: absolute;
     bottom: 50px;
     right: 20px;
     animation: upDown 2s alternate infinite ease-in-out ;
+    cursor: pointer;
 }
 @keyframes upDown{
     from{
-        transform: translateY(-10px) rotate(180deg);
+        transform: translateY(-10px) ;
     }
     to{
-        transform: translateY(10px) rotate(180deg);
+        transform: translateY(10px);
     }
 }
 /* ,.vision,.team{
@@ -99,6 +100,7 @@
     transform: translateY(50px);
     animation:slideUp 1s ease-out forwards;
     animation-delay: 1s;
+    margin-left: 2.5rem;
 }
 h1,h2,h4,p{
     text-align: center;
@@ -429,7 +431,7 @@ h1,h2,h4,p{
   height: 100vh;
   background: #0f2027;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family:  "Poppins", "Segoe UI", sans-serif;
 }
 
 .hero-left {
