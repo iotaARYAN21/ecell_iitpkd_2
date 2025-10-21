@@ -1,0 +1,693 @@
+/* Base styles from your file */
+*{
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("../src/assets/front.png"); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* padding-top: 4rem; */
+    /* background-color: yellow; */
+    /* opacity: 0.2; */
+}
+.home-overlay{
+    width: 100%;
+    height: 100vh;
+    padding-top: 4rem;
+    /* background-color: rgba(4, 68, 132, 0.468) ; */
+    
+    /* background-size: cover; */
+    /*rgba(4, 68, 132, 0.468) */
+}
+/* ORIGINAL #ecellHome STYLE - APPLIED TO DESKTOP/DEFAULT */
+#ecellHome{
+    height: 25rem;
+    width: 25rem;
+    position: relative;
+    top: 0; 
+    left: 0;
+    /* border-radius: 5rem; */
+    filter: brightness(1.5);
+    z-index: 10; 
+    /* Set default opacity for desktop */
+    opacity: 1; 
+}
+.homeContent{
+    height: 100%;
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.homeContent h1{
+    color: #fbc45e;
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    text-align: left ;
+    padding-left: 1em;
+    word-wrap: break-word;
+    /* position: relative; */
+}
+
+
+.arrow{
+    height: 4rem;
+    width: auto;
+    z-index: 999;
+    position: absolute;
+    bottom: 80px;
+    right: 50px; /* Adjusted to be inside hero-left */
+    animation: upDown 2s alternate infinite ease-in-out ;
+    cursor: pointer;
+}
+@keyframes upDown{
+    from{
+        transform: translateY(-10px) ;
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+/* ,.vision,.team{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide 1s ease-out forwards;
+    animation-timeline: scroll();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes slide {
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} */
+
+.vision,.events-activities{
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide-up-text{
+    opacity: 0;
+    transform: translateY(50px);
+    animation:slideUp 1s ease-out forwards;
+    animation-delay: 1s;
+    margin-left: 2.5rem;
+}
+h1,h2,h4,p{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.explore{
+    color: white;
+    font-size: 1.5rem;
+    border: 5px solid white;
+    padding: 1.5rem;
+    /* margin-bottom:0 ; */
+}
+.explore:hover{
+    border-color: orange;
+    color: orange;
+    /* scale: 1.1; */
+}
+
+@keyframes slideUp{
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.intro{
+  height: auto;
+  width: 100vw;
+  text-align: center;
+  /* padding-top: 5rem; */
+  scroll-margin-top: 10rem;
+  margin-bottom: auto;
+  /* margin-bottom:15rem;   */
+  /* opacity: 0.5; */
+  /* z-index: -1; */
+  
+}
+.animate-elt{
+    margin-top: 2rem;
+    animation : animateOnScroll both ease-out;
+    animation-timeline: view();
+  animation-range: entry 20% cover 50%;
+  animation-delay: 5s;
+  /* will-change: transform, opacity; */
+  /* background-color: #1a1a1a; */
+}
+.events-activities{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid white; */
+}
+@keyframes animateOnScroll{
+    from{
+        opacity: 0;
+        /* scale: 0.5; */
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY((0));
+        /* scale: 1; */
+    }
+}
+
+.intro > h1 ,.vision h1 ,.events-activities h1 ,.team h1{
+  /* font-size: 3rem; */
+  padding: 2rem 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+.events-activities > h1{
+    margin-top: 4rem;
+    margin-bottom:2rem ;
+    padding: 0;
+}
+
+.intro h2{
+    font-size: 1.5rem;
+    margin: 2rem ;
+}
+.intro > p , .vision p{
+    /* text-align: justify; */
+  font-size:1.5rem;
+  margin: 0 3rem;
+  text-align: justify;
+  text-justify: inter-word; /* ensures spacing only happens between words */
+  hyphens: auto;            /* allows breaking long words if needed */
+  line-height: 1.6;         /* improves readability */
+  word-spacing: normal; 
+  font-family: 'Poppins', sans-serif;
+}
+.intro ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro ul li{
+    font-size: 1.5rem;
+    text-align:start;
+    margin: 1rem ;
+}
+.intro .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 1rem;
+    width: auto;
+    /* border: 2px solid ; */
+}
+
+/* .intro , .vision , .events-activites ,.team{
+    margin: 20px 20px;
+} */
+
+
+/* Event and activities */
+.container{
+    height: 600px;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem; 
+    /* min-height: 40vh; */
+    /* border: 1px solid white; */
+}
+
+
+
+@media (max-width:800px){
+    .homeContent h1{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .explore{
+        /* color: white; */
+        font-size: 1rem;
+        border: 5px solid white;
+        padding: 1.5rem;
+    }
+    li{
+        width: 100%;
+    }
+    .text{
+        font-size: 1rem;
+    }
+}
+
+/* .container:nth-child(3){
+    margin-bottom: 50px;
+    top: 50rem;
+} */
+
+.team{
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 20rem;
+}
+.two-row{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.three-row{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.member{
+    height: 16rem;
+    width: 13rem;
+    background-color:black;
+    /* clip-path:inset( 0 0 0 0 round 30px 0px ); */
+}
+/* .member:hover{
+    box-shadow: 0 2px 5px white , 0 -2px 5px white ;
+} */
+.member > img{
+    height: 13rem;
+    width: auto;
+}
+.member>*{
+    color: white;
+}
+
+
+/* footer */
+
+@media (max-width:700px) {
+    /* .arrow{
+        bottom: 60px;
+    } */
+    .text , .text>*{
+        font-size: 1rem !important ;
+        
+        /* color: aqua; */
+    }
+    .intro .list ul{
+        padding-left:20% ;
+        width: 75%;
+    }
+    .homeContent h1{
+        font-size: 2rem !important;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        width: auto;
+        gap: 5rem;
+        overflow-y: hidden;
+        /* margin-bottom: auto; */
+         margin-bottom: 6rem;
+    }
+    .container:last-child{
+        margin-bottom:150px ;
+    }
+    .team {
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+  }
+}
+@media (max-width:400px) {
+    .container{
+        min-height: auto;
+        margin-bottom: 2rem;
+    }
+    .homeContent h1{
+        font-size: 2rem !important ;
+    }
+}
+@media (max-width:900px) {
+    .team{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two-row,.three-row{
+        flex-direction: column;
+    }
+    .list ul{
+        padding-left: 2rem;
+    }
+}
+
+
+@media (max-width:500px) {
+    .intro ul{
+        padding-left: 2rem;
+    }
+    .container{
+        height: max-content;
+    }
+}
+
+
+@media (max-width:950px) {
+    .two-row,.three-row{
+        gap: 2.5rem;
+    }
+}
+
+
+@media (max-width: 920px),(max-height:400px){   
+  .home {
+    background-attachment: scroll;
+    background-position: 70% center;
+  }
+}
+.text{
+    /* font-style: italic; */
+    color: #C5D7E3;
+}
+@media (max-width:400px) {
+    .home{
+        background-attachment: scroll;
+        background-position: 65% center;
+    }
+}
+
+@media (max-height:400px) {
+    .homeContent h1{
+        font-size: 2rem;
+    }
+    .home{
+        background-position: center 30%  !important;
+    }
+}
+
+
+
+
+
+/* h1{
+    background: linear-gradient(to top ,yellow,orange,red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} */
+/* .heading{
+    background-image:linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} */
+
+.bodoni-moda-sc-heading {
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* -------------------------------------- */
+/* Hero Section - Base Styles (Desktop: Side-by-Side) */
+/* -------------------------------------- */
+
+.hero-split {
+  display: flex;
+  height: 100vh;
+  background: #0f2027;
+  color: #fff;
+  font-family:  "Poppins", "Segoe UI", sans-serif;
+  align-items: center;
+  overflow: hidden;
+  /* Needed for absolute positioning on mobile */
+  position: relative; 
+}
+
+.hero-left {
+    height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  position: relative;
+  z-index: 10; /* Ensures text is on top of the image */
+}
+
+.hero-left h1 {
+  font-size: 3.5rem;
+  color:  #EAF6FB;
+  width: auto; 
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+/* Desktop Image Container (Hero-Right) */
+.hero-right {
+    height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #00b4db33 0%, transparent 70%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  z-index: 9; /* Image stays below hero-left if they overlap */
+}
+
+/* Desktop Image Style */
+.hero-right #ecellHome{
+    height: 25rem;
+    width: 25rem;
+    position: relative; 
+    top: 0; 
+    left: 0;
+    filter: brightness(1.5);
+    opacity: 1; /* Desktop opacity */
+}
+
+/* Arrow position (relative to hero-left) */
+.arrow {
+    right: 20px; 
+}
+
+/* -------------------------------------- */
+/* Media Queries for Mobile (Image as Transparent Background) */
+/* -------------------------------------- */
+
+/* Mobile Layout: Image becomes a transparent background for the text area (Max Width 768px) */
+@media (max-width:1000px) and (min-width:768px) {
+    .hero-left{
+        width:60%;
+        padding: 1rem;
+    }
+    .slide-up-text{
+        margin-left: 0.5rem;
+    }
+    .hero-right{
+        width: 40%;
+    }
+    #ecellHome{
+        padding-left: 1rem;
+    }
+}
+@media (max-width: 768px) {
+  .hero-split {
+    /* Auto height to fit content */
+    height: auto; 
+    min-height: 100vh;
+    /* Use position: relative for the children to be absolutely positioned within it */
+    flex-direction: column; 
+    /* Ensures stacking and proper flow */
+    justify-content: flex-start;
+  }
+
+  /* 1. Text container (.hero-left) is now on top */
+  .hero-left {
+    /* Takes full width */
+    width: 100%; 
+    padding: 4rem 1rem 2rem; /* Adjusted padding */
+    align-items: center; 
+    text-align: center;
+    /* Crucial: Semi-transparent background for text readability over the image */
+    background: rgba(15, 32, 39, 0.65); 
+    min-height: 50vh; /* Give it a set height to contain the background image */
+    /* Z-index ensures it sits *over* the absolute image */
+    z-index: 1; 
+  }
+
+  .hero-left h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    filter: brightness(120%);
+  }
+  
+  /* Arrow flows with the text content */
+  .arrow {
+    position: absolute; 
+    margin: 1rem auto 0; 
+    right: 20px;
+    bottom: 80px;
+  }
+  
+  /* 2. Image container (.hero-right) is absolutely positioned as a background */
+  .hero-right {
+    /* Hide the original side-by-side flex behavior */
+    display: block;
+    /* Layering the image behind hero-left */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: none; 
+    background: none; /* Remove any previous backgrounds */
+    /* Z-index ensures it is behind the text (hero-left) */
+    z-index: 1; 
+  }
+
+  /* 3. Image styling (transparent background) */
+  .hero-right #ecellHome {
+    /* Position the image to cover the entire container */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Make the image transparent (opacity: 0.4) */
+    opacity: 0.4;
+    
+    /* Size the image to cover the background area */
+    height: 70%;
+    width: 100%;
+    object-fit: cover; 
+    filter: brightness(1.0); /* Reset brightness for opacity to work clearly */
+  }
+}
+
+/* Mobile Screens (Max Width 600px) */
+@media (max-width: 600px) {
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Small Mobile Screens (Max Width 400px) */
+@media (max-width: 400px) {
+  .hero-left h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Remaining styles follow... */
+
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#calendar-in-mainpage{
+    /* margin-top: 10rem; */
+    /* margin-left: 13rem; */
+    height: 40rem;
+    width: 70rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    /* padding: 2rem; */
+
+}
+
+@media (max-width:600px) {
+    #calendar-in-mainpage{
+        height: 45rem;
+        width: 25rem;
+        /* margin-right: 0; */
+        /* margin:2rem 0.5rem 0px 0.5rem; */
+        padding: 1rem;
+    }
+}
+@media (max-width:400px){
+    #calendar-in-mainpage{
+        height: 40rem;
+        width: 23rem;
+    }
+}
+
+
+
+/* 333 */
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0; 
+}
+#calendar-in-mainpage{
+    width: 90%; 
+    max-width: 75rem; 
+    height: 45rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    overflow: hidden; 
+}
+#calendar-in-mainpage h1 {
+    margin-bottom: 1.5rem; 
+}
+
+@media (max-width: 1200px) {
+    #calendar-in-mainpage {
+        max-width: 90%;
+        height: 45rem;
+    }
+}
+@media (max-width: 768px) {
+    #calendar-in-mainpage {
+        width: 95%;
+        height: 45rem; 
+        padding: 1rem;
+        min-height: 400px;
+    }
+}
+@media (max-width: 450px){
+    #calendar-in-mainpage {
+        height: auto;
+        min-height: 350px;
+        width: 98%;
+        padding: 0.5rem;
+    }
+}
+
+.rbc-toolbar-label{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    width: min-content;
+}

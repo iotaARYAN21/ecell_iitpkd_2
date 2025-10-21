@@ -1,0 +1,42 @@
+.contact_form{
+    height: auto;
+    /* width: ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 25%;
+    height: auto;
+}
+input ,textarea{
+    margin: 20px 0;
+    border-radius: 7px;
+    padding: 10px;
+    /* border: 2px solid #fbc45e; */
+}
+input{
+    height: 40px;
+}
+button{
+    /* background-color: #ffb007; */
+    width: 50%;
+    height: 40px;
+    border-radius: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #EAF6FB   ;
+     /* background: #f46b45;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #eea849, #f46b45);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #eea849, #f46b45);  */
+}
+button:hover{
+    cursor:pointer
+}
+.btn{
+    text-align: center;
+}
