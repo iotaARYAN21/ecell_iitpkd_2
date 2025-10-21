@@ -21,6 +21,7 @@ import readMore from "../src/assets/read-more.mp4";
 import hackathonVideo from "../src/assets/hackathon.mp4";
 import teamData from "../Backend/teamData25.js"
 import Carousel from "./Carousel.jsx";
+import RightNavBar from "./RightNavBar.jsx";
 function Home(){
     const introContent = useRef();
     const isMobile = useMediaQuery({maxWidth:600});
@@ -34,9 +35,10 @@ function Home(){
       <div class="hero-left">
         <h1 className="slide-up-text  "><span>Entrepreneurship Cell</span><br />
   <span>IIT Palakkad</span></h1>
-        <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
+        
       </div>
       <div class="hero-right">
+        <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
         <img id="ecellHome" src={ecellHome} alt="" />
       </div>
     </section>
@@ -66,11 +68,17 @@ function Home(){
                     <h1>Our Vision</h1> 
                     <p className="text">The Entrepreneurship Cell of IIT Palakkad envisions building a thriving entrepreneurial ecosystem within the institute. With the launch of its flagship event, the E-Summit 2026, the E-Cell aims to position the institute as a hub of innovation and entrepreneurship. The vision is to empower students by providing them with real-world exposure, mentorship, and resources necessary to transform ideas into impactful ventures. Through national-level competitions, networking events, and collaborations with industry leaders, IIT Palakkad E-Cell seeks to inspire the next generation of entrepreneurs and foster a culture of creative problem-solving and startup excellence.
                     </p>
-                </div>
-                <div className="events-activities">
+            </div>
+            <div className="events-activities">
                     <h1>Events & Activities</h1>
                     <Carousel/>
-                </div>
+            </div>
+            <div className="events">
+                <div id="calendar-in-mainpage">
+                <h1>Events Calendar</h1>
+                <RightNavBar/>
+            </div>
+            </div>
                 <div className="team">
                     <h1>Our Team</h1>
                     <div className="three-row">

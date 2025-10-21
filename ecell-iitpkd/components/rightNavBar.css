@@ -20,7 +20,8 @@
 }
 
 .tab-content {
-  padding: 1rem;
+  padding: 0; /* MODIFIED: Removed padding to fill parent container */
+  height: 100%; /* NEW: Ensures content fills parent */
 }
 
 .toggle-button {
@@ -45,6 +46,7 @@
 
 /* react big calendar */
 .rbc-calendar {
+  font-family: 'Poppins', sans-serif;
   background-color: #1B2E38;
   color: #EAF6FB;
 }
@@ -55,6 +57,7 @@
 .rbc-month-view {
   background-color: #1B2E38;
   color: #EAF6FB;
+  /* height: max-content !important; */
 }
 .rbc-event{
   color: #EAF6FB;
@@ -62,6 +65,7 @@
 }
 
 .rbc-toolbar button {
+  font-family: 'Inter', sans-serif;
   width: max-content;
   background-color: #0c0c0c !important;
   color: #EAF6FB !important;
@@ -78,6 +82,7 @@
 .rbc-active{
   border: 3px solid #EAF6FB !important;
 }
+
 @media (max-width:800px){
   .rbc-time-view{
     width: 20rem !important;
@@ -86,12 +91,17 @@
 
 .rbc-date-cell button{
   max-width: 100%;
+  /* height: 100%; */
   text-align: center;
+
 }
 
 @media (max-width:600px) {
   .right-tab{
     width: 90%;
+  }
+  .rbc-month-view{
+    height: 25rem;
   }
   
 }
@@ -99,5 +109,7 @@
   .right-tab{
     width: 100%;
   }
-  
+  .rbc-row-bg{
+    height: 30px !important;
+  }
 }

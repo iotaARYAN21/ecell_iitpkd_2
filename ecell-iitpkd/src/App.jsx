@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-    <RightNavBar/>
+    {/* <RightNavBar/> */}
     {/* <Router> */}  
     {/* if Router is present then it is not rendering the website */}
         <Routes>

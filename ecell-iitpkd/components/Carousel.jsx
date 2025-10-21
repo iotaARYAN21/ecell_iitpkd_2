@@ -28,7 +28,7 @@ const Carousel = () => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      // onSlideChange={() => console.log('slide change')}
       autoplay={{
         delay:1500,
         disableOnInteraction:false,
@@ -66,8 +66,8 @@ company might sustain in the market. Teams simulate running the startup, making 
       </SwiperSlide>
       <SwiperSlide >
         <video src={readMore} className='car-card' autoPlay loop muted playsInline></video>
-                <div className="car-desc">
-                    <h1 style={{paddingTop:'5rem'}}>For all the events check out Events page</h1>
+                <div className="car-desc read-more">
+                    <h1>For all the events check out Events page</h1>
                 </div>
       </SwiperSlide>
       ...

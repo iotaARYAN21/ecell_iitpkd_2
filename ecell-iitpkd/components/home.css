@@ -1,3 +1,4 @@
+/* Base styles from your file */
 *{
     box-sizing: border-box;
 }
@@ -21,14 +22,18 @@
     /* background-size: cover; */
     /*rgba(4, 68, 132, 0.468) */
 }
+/* ORIGINAL #ecellHome STYLE - APPLIED TO DESKTOP/DEFAULT */
 #ecellHome{
     height: 25rem;
     width: 25rem;
     position: relative;
-    top: 10rem;
-    left: 10rem;
+    top: 0; 
+    left: 0;
     /* border-radius: 5rem; */
     filter: brightness(1.5);
+    z-index: 10; 
+    /* Set default opacity for desktop */
+    opacity: 1; 
 }
 .homeContent{
     height: 100%;
@@ -53,16 +58,12 @@
 
 
 .arrow{
-
-    /* TODO -> arrow causing extra space on the right side on click ---> SOLVED*/
     height: 4rem;
     width: auto;
-    /* transform: rotate(180deg); */
-    /* display: block; */
     z-index: 999;
     position: absolute;
-    bottom: 50px;
-    right: 20px;
+    bottom: 80px;
+    right: 50px; /* Adjusted to be inside hero-left */
     animation: upDown 2s alternate infinite ease-in-out ;
     cursor: pointer;
 }
@@ -103,6 +104,7 @@
     margin-left: 2.5rem;
 }
 h1,h2,h4,p{
+    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 .explore{
@@ -167,6 +169,7 @@ h1,h2,h4,p{
 .intro > h1 ,.vision h1 ,.events-activities h1 ,.team h1{
   /* font-size: 3rem; */
   padding: 2rem 0;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
@@ -189,6 +192,7 @@ h1,h2,h4,p{
   hyphens: auto;            /* allows breaking long words if needed */
   line-height: 1.6;         /* improves readability */
   word-spacing: normal; 
+  font-family: 'Poppins', sans-serif;
 }
 .intro ul{
     width: 100%;
@@ -425,16 +429,24 @@ h1,h2,h4,p{
 }
 
 
-/* ------------------Chtgpt */
+/* -------------------------------------- */
+/* Hero Section - Base Styles (Desktop: Side-by-Side) */
+/* -------------------------------------- */
+
 .hero-split {
   display: flex;
   height: 100vh;
   background: #0f2027;
   color: #fff;
   font-family:  "Poppins", "Segoe UI", sans-serif;
+  align-items: center;
+  overflow: hidden;
+  /* Needed for absolute positioning on mobile */
+  position: relative; 
 }
 
 .hero-left {
+    height: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -442,36 +454,240 @@ h1,h2,h4,p{
   align-items: flex-start;
   padding: 5rem;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  position: relative;
+  z-index: 10; /* Ensures text is on top of the image */
 }
 
 .hero-left h1 {
   font-size: 3.5rem;
   color:  #EAF6FB;
+  width: auto; 
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 2rem;
 }
 
-.hero-left p {
-  margin-top: 1rem;
-  color: #d0eaff;
-  font-size: 1.2rem;
-}
-
-.hero-left button {
-  margin-top: 2rem;
-  background: #00b4db;
-  color: #fff;
-  border: none;
-  padding: 0.8rem 2rem;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.hero-left button:hover {
-  background: #2c5364;
-}
-
+/* Desktop Image Container (Hero-Right) */
 .hero-right {
+    height: 100%;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: radial-gradient(circle at center, #00b4db33 0%, transparent 70%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  z-index: 9; /* Image stays below hero-left if they overlap */
+}
+
+/* Desktop Image Style */
+.hero-right #ecellHome{
+    height: 25rem;
+    width: 25rem;
+    position: relative; 
+    top: 0; 
+    left: 0;
+    filter: brightness(1.5);
+    opacity: 1; /* Desktop opacity */
+}
+
+/* Arrow position (relative to hero-left) */
+.arrow {
+    right: 20px; 
+}
+
+/* -------------------------------------- */
+/* Media Queries for Mobile (Image as Transparent Background) */
+/* -------------------------------------- */
+
+/* Mobile Layout: Image becomes a transparent background for the text area (Max Width 768px) */
+@media (max-width:1000px) and (min-width:768px) {
+    .hero-left{
+        width:60%;
+        padding: 1rem;
+    }
+    .slide-up-text{
+        margin-left: 0.5rem;
+    }
+    .hero-right{
+        width: 40%;
+    }
+    #ecellHome{
+        padding-left: 1rem;
+    }
+}
+@media (max-width: 768px) {
+  .hero-split {
+    /* Auto height to fit content */
+    height: auto; 
+    min-height: 100vh;
+    /* Use position: relative for the children to be absolutely positioned within it */
+    flex-direction: column; 
+    /* Ensures stacking and proper flow */
+    justify-content: flex-start;
+  }
+
+  /* 1. Text container (.hero-left) is now on top */
+  .hero-left {
+    /* Takes full width */
+    width: 100%; 
+    padding: 4rem 1rem 2rem; /* Adjusted padding */
+    align-items: center; 
+    text-align: center;
+    /* Crucial: Semi-transparent background for text readability over the image */
+    background: rgba(15, 32, 39, 0.65); 
+    min-height: 50vh; /* Give it a set height to contain the background image */
+    /* Z-index ensures it sits *over* the absolute image */
+    z-index: 1; 
+  }
+
+  .hero-left h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    filter: brightness(120%);
+  }
+  
+  /* Arrow flows with the text content */
+  .arrow {
+    position: absolute; 
+    margin: 1rem auto 0; 
+    right: 20px;
+    bottom: 80px;
+  }
+  
+  /* 2. Image container (.hero-right) is absolutely positioned as a background */
+  .hero-right {
+    /* Hide the original side-by-side flex behavior */
+    display: block;
+    /* Layering the image behind hero-left */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: none; 
+    background: none; /* Remove any previous backgrounds */
+    /* Z-index ensures it is behind the text (hero-left) */
+    z-index: 1; 
+  }
+
+  /* 3. Image styling (transparent background) */
+  .hero-right #ecellHome {
+    /* Position the image to cover the entire container */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Make the image transparent (opacity: 0.4) */
+    opacity: 0.4;
+    
+    /* Size the image to cover the background area */
+    height: 70%;
+    width: 100%;
+    object-fit: cover; 
+    filter: brightness(1.0); /* Reset brightness for opacity to work clearly */
+  }
+}
+
+/* Mobile Screens (Max Width 600px) */
+@media (max-width: 600px) {
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Small Mobile Screens (Max Width 400px) */
+@media (max-width: 400px) {
+  .hero-left h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Remaining styles follow... */
+
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#calendar-in-mainpage{
+    /* margin-top: 10rem; */
+    /* margin-left: 13rem; */
+    height: 40rem;
+    width: 70rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    /* padding: 2rem; */
+
+}
+
+@media (max-width:600px) {
+    #calendar-in-mainpage{
+        height: 45rem;
+        width: 25rem;
+        /* margin-right: 0; */
+        /* margin:2rem 0.5rem 0px 0.5rem; */
+        padding: 1rem;
+    }
+}
+@media (max-width:400px){
+    #calendar-in-mainpage{
+        height: 40rem;
+        width: 23rem;
+    }
+}
+
+
+
+/* 333 */
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0; 
+}
+#calendar-in-mainpage{
+    width: 90%; 
+    max-width: 75rem; 
+    height: 45rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    overflow: hidden; 
+}
+#calendar-in-mainpage h1 {
+    margin-bottom: 1.5rem; 
+}
+
+@media (max-width: 1200px) {
+    #calendar-in-mainpage {
+        max-width: 90%;
+        height: 45rem;
+    }
+}
+@media (max-width: 768px) {
+    #calendar-in-mainpage {
+        width: 95%;
+        height: 45rem; 
+        padding: 1rem;
+        min-height: 400px;
+    }
+}
+@media (max-width: 450px){
+    #calendar-in-mainpage {
+        height: auto;
+        min-height: 350px;
+        width: 98%;
+        padding: 0.5rem;
+    }
+}
+
+.rbc-toolbar-label{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    width: min-content;
 }

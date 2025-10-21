@@ -57,7 +57,7 @@ const RightNavBar = () => {
   return (
      <>
      
-      <div className={`right-tab ${isOpen ? 'open' : ''}`}>
+      {/* <div > */}
         <div className="tab-content">
           {/* <iframe src="https://calendar.google.com/calendar/embed?src=aryan0312g%40gmail.com&ctz=Asia%2FKolkata"  ></iframe> */}
           <Calendar
@@ -84,11 +84,11 @@ const RightNavBar = () => {
   })}
       />
         </div>
-      </div>
+      {/* </div> */}
 
-      <button className="toggle-button" onClick={toggleTab}>
+      {/* <button className="toggle-button" onClick={toggleTab}>
         {isOpen ? '>' : '<'}
-      </button>
+      </button> */}
     </>
   )
 }
