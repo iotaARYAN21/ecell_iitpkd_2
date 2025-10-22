@@ -1,24 +1,12 @@
-// import React from "react";
 import "./home.css";
-// import Navbar from "./Navbar.jsx";
-import {useRef} from "react";
+import {useEffect,useRef} from "react";
 import {useMediaQuery} from 'react-responsive';
-// import userCard from "./UserCard";
 import UserCard from "./UserCard";
-// import EventCard from "./EventCard";
 import Footer from "./Footer";
 
 // importing images
 import arrow from "../src/assets/arrow2.svg";
 import ecellHome from '../src/assets/ecell_home2.png'
-import startTank from "../src/assets/startTank2.jpg";
-import hackathon from "../src/assets/hackathon2.jpg";
-import ideathon from "../src/assets/ideathon1.jpg";
-// import productLa from "../src/assets/ideathon1.jpg";
-import rocket from "../src/assets/rocket.mp4";
-import idea from "../src/assets/ideathon.mp4";
-import readMore from "../src/assets/read-more.mp4";
-import hackathonVideo from "../src/assets/hackathon.mp4";
 import teamData from "../Backend/teamData25.js"
 import Carousel from "./Carousel.jsx";
 import RightNavBar from "./RightNavBar.jsx";
@@ -28,7 +16,37 @@ function Home(){
     function handleClick(){
         introContent.current.scrollIntoView({behavior:"smooth"});      
     }
-    
+    useEffect(() => {
+        // Select all elements that should animate on scroll
+        // Ensure you apply the 'animate-elt' class to the elements you want to animate
+        const elements = document.querySelectorAll('.slideUpElt');
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                // If the element is now intersecting (visible)
+                if (entry.isIntersecting) {
+                    // Add the class that triggers the smooth slide-up animation
+                    entry.target.classList.add('isVisible');
+                    // Stop observing after the animation has been triggered once
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            // Options: triggers when 10% of the element is visible
+            rootMargin: '0px',
+            threshold: 0.1 
+        });
+
+        // Start observing each element
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Cleanup function
+        return () => observer.disconnect();
+    }, []);
+
+
     return <div className="home">
         <div className="home-overlay">
             <section class="hero-split">
@@ -48,7 +66,7 @@ function Home(){
   <span>IIT Palakkad</span></h1>
                 <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
             </div> */}
-            <div className="intro animate-elt" ref={introContent} >
+            <div className="intro slideUpElt" ref={introContent} >
                 <h1 className="heading">About Us</h1>
                 <p className="text">E-Cell IIT Palakkad is a student-driven initiative that nurtures the spirit of entrepreneurship through events, mentorship, and hands-on support.
                     At the core is <b>SURGE</b> ("Startup Upscaling and Resource Growth Engine")—a dynamic team of students, faculty, alumni, and experts from TechIn, IPTIF, and the CSquare Innovation Lab—dedicated to turning ideas into startups.
@@ -64,22 +82,22 @@ function Home(){
                  </div>
             </div>
             
-            <div className="vision animate-elt">
+            <div className="vision slideUpElt">
                     <h1>Our Vision</h1> 
                     <p className="text">The Entrepreneurship Cell of IIT Palakkad envisions building a thriving entrepreneurial ecosystem within the institute. With the launch of its flagship event, the E-Summit 2026, the E-Cell aims to position the institute as a hub of innovation and entrepreneurship. The vision is to empower students by providing them with real-world exposure, mentorship, and resources necessary to transform ideas into impactful ventures. Through national-level competitions, networking events, and collaborations with industry leaders, IIT Palakkad E-Cell seeks to inspire the next generation of entrepreneurs and foster a culture of creative problem-solving and startup excellence.
                     </p>
             </div>
-            <div className="events-activities">
+            <div className="events-activities slideUpElt">
                     <h1>Events & Activities</h1>
                     <Carousel/>
             </div>
-            <div className="events">
+            <div className="events slideUpElt">
                 <div id="calendar-in-mainpage">
                 <h1>Events Calendar</h1>
                 <RightNavBar/>
             </div>
             </div>
-                <div className="team">
+                <div className="team slideUpElt">
                     <h1>Our Team</h1>
                     <div className="three-row">
                         {teamData.slice(0,2).map((member,index)=>(
