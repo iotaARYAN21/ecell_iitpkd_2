@@ -23,8 +23,8 @@ function Navbar(){
                 <span></span>
             </div>
             <ul className={menuOpen ? "open" : ""}>
-                <li><NavLink to="allevents">Events</NavLink></li>
-                <li><NavLink to="contact">Contact</NavLink></li>
+                <li onClick={()=>handleClick()}><NavLink to="allevents">Events</NavLink></li>
+                <li onClick={()=>handleClick()}><NavLink to="contact">Contact</NavLink></li>
             </ul>
         </nav>
     // </div>

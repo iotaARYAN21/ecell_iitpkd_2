@@ -617,11 +617,12 @@ h1,h2,h4,p{
     margin: auto;
 }
   .arrow{
-    bottom: 60px;
+    bottom: 150px;
   }
   #ecellHome{
     z-index: -1;
   }
+
 }
 
 /* Remaining styles follow... */
@@ -659,6 +660,7 @@ h1,h2,h4,p{
         width: 23rem;
     }
 }
+
 
 
 

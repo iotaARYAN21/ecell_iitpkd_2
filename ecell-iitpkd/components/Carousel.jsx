@@ -67,7 +67,8 @@ company might sustain in the market. Teams simulate running the startup, making 
       <SwiperSlide >
         <video src={readMore} className='car-card' autoPlay loop muted playsInline></video>
                 <div className="car-desc read-more">
-                    <h1>For all the events check out Events page</h1>
+                    {/* <h1></h1> */}
+                    <p>For all the events check out Events page.</p>
                 </div>
       </SwiperSlide>
       ...
