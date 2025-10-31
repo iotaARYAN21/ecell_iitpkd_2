@@ -625,6 +625,25 @@ h1,h2,h4,p{
 
 }
 
+@media (max-width:500px){
+    .hero-left{
+        padding: 2rem;
+    }
+    .hero-right #ecellHome{
+        
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-bottom: 1rem;
+    }
+    .hero-left h1{
+       /* border: 2px solid white; */
+        padding-bottom:2.5rem ;
+        margin: 1rem;
+    }
+}
+
 /* Remaining styles follow... */
 
 .events{
