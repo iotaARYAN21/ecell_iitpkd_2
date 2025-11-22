@@ -7,7 +7,7 @@ import ig from "../src/assets/ig.svg";
 import linkedin from "../src/assets/linkedin.svg";
 import twitter from "../src/assets/twitter.svg";
 import yt from "../src/assets/yt.svg"
-
+import ecell_logo from "../src/assets/lg.png"
 const Footer = () => {
     const date = new Date().getFullYear();
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer_div1">
             <div className="footer_r1">
                 <div className="ecell-logo-container ">
-                    <img src="./lg.png" alt="" className="ecell-logo" /> 
+                    <img src={ecell_logo} alt="" className="ecell-logo" /> 
                 </div>
                 <h3 >E-Cell IIT PALAKKAD</h3>
                 <h3>The Fire Within</h3>

@@ -1,11 +1,11 @@
 import "./allevents.css"
 import Footer from "../Footer";
-import startTank from  "../../src/assets/startTank2.jpg";
-import ideathon from  "../../src/assets/ideathon1.jpg";
-import hackathon from  "../../src/assets/hackathon2.jpg";
-import startupExpo from  "../../src/assets/startupExpo2.jpg";
-import productLaunch from  "../../src/assets/productLaunchChallenge.jpg";
-import businessPlan from  "../../src/assets/businessPlanExpo.jpg";
+import startTank from  "../../src/assets/startTank2.webp";
+import ideathon from  "../../src/assets/ideathon1.webp";
+import hackathon from  "../../src/assets/hackathon2.webp";
+import startupExpo from  "../../src/assets/startupExpo2.webp";
+import productLaunch from  "../../src/assets/productLaunchChallenge.webp";
+import businessPlan from  "../../src/assets/businessPlanExpo.webp";
 
 
 import rocket from "../../src/assets/rocket.mp4";
@@ -30,7 +30,7 @@ function AllEvents(){
                         {/* <video src={rocket} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>Start Tank</h1>
-                            <p className="desc">A live startup pitching event where participants present ideas to investors and the audience. Each audience member gets virtual currency to bid on ideas they like. The idea with the highest audience investment wins a prize. If that idea later launches and its share value crosses a set threshold, early audience backers receive proportional shares.</p>
+                            <p className="desc">A live startup pitch event where the audience uses virtual currency to bid on ideas. The idea with the most audience investment wins a prize, and early audience backers get proportional shares if the launched company's share value crosses a set threshold.</p>
                         </div>
                     </div>
                     <div className="event2">
@@ -57,12 +57,13 @@ function AllEvents(){
                     {/* <video src={idea} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>IdeaThon (24 Hour Challenge)</h1>
-                        <p className="desc">Following up on a problem statement teams will have 24 hours to thrive and come up with a proper scratch to product plan and also how the
-        company might sustain in the market. Teams simulate running the startup, making real-time business decisions.</p>
+                        <p className="desc">Following up on a problem statement, Teams have 24 hours to develop a scratch-to-product plan and a market sustainability strategy. The challenge involves simulating startup operations and making real-time business decisions..</p>
                         </div>
                 </div>
                 <div className="event5">
-                    <video src={techXpo} className='card' autoPlay loop muted playsInline></video>
+                    {/* <video src={techXpo} className='card' autoPlay loop muted playsInline></video> */}
+                        <img src={startTank} className="eventImg" alt="" />
+
                         <div className='event-content'>
                             <h1>TechXpo</h1>
                         <p className="desc">A platform for people across all colleges to showcase their projects. (The startup booth and TechXpo will happen simultaneously at the same place.)</p>
@@ -87,35 +88,40 @@ function AllEvents(){
                         </div>
                 </div>
                 <div className="event8">
-                    <video src={networking} className='card' autoPlay loop muted playsInline></video>
+                    {/* <video src={networking} className='card' autoPlay loop muted playsInline></video> */}
+                        <img src={startTank} className="eventImg" alt="" />
                         <div className='event-content'>
                             <h1>Networking Dinners & Industry Meetups</h1>
                         <p className="desc">Exclusive invite-only networking sessions for selected participants, mentors, and investors.</p>
                         </div>
                 </div>
                 <div className="event9">
-                    <video src={techWork} className='card' autoPlay loop muted playsInline></video>
+                    {/* <video src={techWork} className='card' autoPlay loop muted playsInline></video> */}
+                        <img src={startTank} className="eventImg" alt="" />
                         <div className='event-content'>
                             <h1>Technical and Entrepreneurial Workshops</h1>
                         <p className="desc">Covering cutting-edge technologies, product design, digital marketing, and financial modeling.</p>
                         </div>
                 </div>
                 <div className="event10">
-                    <video src={mun} className='card' autoPlay loop muted playsInline></video>
+                    {/* <video src={mun} className='card' autoPlay loop muted playsInline></video> */}
+                        <img src={startTank} className="eventImg" alt="" />
                         <div className='event-content'>
                             <h1>MUN</h1>
                         <p className="desc">A nationwide MUN focussing on the entrepreneurial aspects and the challenges the society faces in execution of ideas.</p>
                         </div>
                 </div>
                 <div className="event11">
-                    <video src={trading} className='card' autoPlay loop muted playsInline></video>
+                    {/* <video src={trading} className='card' autoPlay loop muted playsInline></video> */}
+                        <img src={startTank} className="eventImg" alt="" />
                         <div className='event-content'>
                             <h1>Live Trading Simulation</h1>
                         <p className="desc">An interactive session for students to understand financial markets through virtual trading.</p>
                         </div>
                 </div>
                 <div className="event12">
-                    <video src={investment} className='card' autoPlay loop muted playsInline></video>
+                    {/* <video src={investment} className='card' autoPlay loop muted playsInline></video> */}
+                        <img src={startTank} className="eventImg" alt="" />
                         <div className='event-content'>
                             <h1>Investment Game</h1>
                         <p className="desc">Participants act as investors and entrepreneurs, negotiating deals based on real-time data.</p>

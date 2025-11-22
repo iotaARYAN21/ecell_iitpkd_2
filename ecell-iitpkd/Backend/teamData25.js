@@ -1,6 +1,6 @@
 // import Aashutosh from "../src/assets/team25/Aashutosh.jpeg";
 // import Abhiraj from "../src/assets/team25/Abhiraj_raje.HEIC";
-// import Aman from "../src/assets/team25/Aman_Meena.jpg";
+// import Aman from "../src/assets/team25/Aman_Meena.webp";
 // import Aashutosh from "../src/assets/team25";
 // import Aashutosh from "../src/assets/team25";
 // import Aashutosh from "../src/assets/team25";
@@ -22,12 +22,12 @@
 // import Aashutosh from "../src/assets/team25";
 // import Aashutosh from "../src/assets/team25";
 
-const imageModules = import.meta.glob('../src/assets/team25/*.jpg', { eager: true });
+const imageModules = import.meta.glob('../src/assets/team25/*.webp', { eager: true });
 
-// Convert to simpler key format like 'alice.jpg'
+// Convert to simpler key format like 'alice.webp'
 const images = Object.fromEntries(
   Object.entries(imageModules).map(([path, mod]) => {
-    const filename = path.split('/').pop(); // 'alice.jpg'
+    const filename = path.split('/').pop(); // 'alice.webp'
     return [filename, mod.default];
   })
 );
@@ -36,63 +36,63 @@ const teamData = [
     {
         name:'Siddharth Bharti',
         role:'Head',
-        image:images['siddharthBharti2.jpg'],
+        image:images['siddharthBharti2.webp'],
         mail:'132301033@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/siddharth-kr-997667249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         name:'Prof. Mayank Tiwari',
         role:'Faculty Advisor',
-        image:images['ProfMayankSir.jpg'],
+        image:images['ProfMayankSir.webp'],
         mail:'mayank@iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/mayank-tiwari-3301268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         name:'Aryan Mathur',
         role:'Mentor',
-        image:images['ARYAN_MATHUR.jpg'],
+        image:images['ARYAN_MATHUR.webp'],
         mail:'122201017@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/aryannmathur/'
     },
     {
         name:'Joy Patel',
         role:'Mentor',
-        image:images['JOY.jpg'],
+        image:images['JOY.webp'],
         mail:'132201022@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/joy-patel-7174a6250/'
     },
     {
         name:'Ananthakrishnan',
         role:'Deputy Head',
-        image:images['Ananthakrishnan.jpg'],
+        image:images['Ananthakrishnan.webp'],
         mail:'122301003@smail.iitpdk.ac.in',
         linkedin:'www.linkedin.com/in/anantha-krishnan-thulasiraman-647b621b1'
     },
     {
         name:'Emmanuel',
         role:'Deputy Head',
-        image:images['Emmanuel_Johnson.jpg'],
+        image:images['Emmanuel_Johnson.webp'],
         mail:'122401015@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/emmanuel-johnson-618598332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         name:'Shreyas',
         role:'Event Coordinator',
-        image:images['Shreyas_vadthya.jpg'],
+        image:images['Shreyas_vadthya.webp'],
         mail:'112201038@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/shreyas-vadthya-788928250/'
     },
     {
         name:'Abhiraj',
         role:'Event Coordinator',
-        image:images['Abhiraj_raje.jpg'],
+        image:images['Abhiraj_raje.webp'],
         mail:'112401001@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/abhiraj-raje-a28828278?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdYkNmT8iSGeO7A28FKz9aw%3D%3D'
     },
     {
         name:'Priyam Sahu',
         role:'PG Lead',
-        image:images['PRIYAM.jpg'],
+        image:images['PRIYAM.webp'],
         mail:'222405012@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/priyam-sahu-211b99268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
@@ -100,77 +100,77 @@ const teamData = [
     {
         name:'Likhith',
         role:'Content Creator & Media Publicity Head',
-        image:images['Likhith.jpg'],
+        image:images['Likhith.webp'],
         mail:'',
         linkedin:''
     },
     {
         name:'Mithil Reddy',
         role:'Content Creator & Media Publicity Head',
-        image:images['MITHIL.jpg'],
+        image:images['MITHIL.webp'],
         mail:'142401037@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/mithil-reddy-67ab22366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         name:'Aashutosh',
         role:'Hospitality Team Lead',
-        image:images['Aashutosh.jpg'],
+        image:images['Aashutosh.webp'],
         mail:'102201025@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/aashutosh-kr-ray-9b505b312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         name:'Ashish Kumar',
         role:'Hospitality Team Lead',
-        image:images['Ashish_Kumar.jpg'],
+        image:images['Ashish_Kumar.webp'],
         mail:'102201032@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in'
     },
     {
         name:'Aman Meena',
         role:'Hospitality Team Lead',
-        image:images['Aman_Meena.jpg'],
+        image:images['Aman_Meena.webp'],
         mail:'122401004@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/aman-gahlot-886712331?trk=contact-info'
     },
     {
         name:'Thirunahari Milind ',
         role:'Outreach and Internal Lead',
-        image:images['Milind.jpg'],
+        image:images['Milind.webp'],
         mail:'102401035@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/milind-thirunahari-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         name:'Lakshmi Harshitha',
         role:'Outreach and Internal Lead',
-        image:images['Harshitha.jpg'],
+        image:images['Harshitha.webp'],
         mail:'132201004@smail.iitpkd.ac.in',
         linkedin:'https://in.linkedin.com/in/harshitha-gandluru'
     },
     {
         name:'Parv Patel',
         role:'Outreach and Internal Lead',
-        image:images['Parv.jpg'],
+        image:images['Parv.webp'],
         mail:'142301041@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/parv-patel-5422b3282'
     },
     {
         name:'Aryan',
         role:'Technical Team Lead',
-        image:images['Aryan.jpg'],
+        image:images['Aryan.webp'],
         mail:'112301041@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/aryan-b34639288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
         name:'Jugdeep Roy',
         role:'Design Head',
-        image:images['Jugdeep.jpg'],
+        image:images['Jugdeep.webp'],
         mail:'122301017@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/jugdeep-roy-a6a012368'
     },
     {
         name:'Ankit Gupta',
         role:'Design Head',
-        image:images['Ankit.jpg'],
+        image:images['Ankit.webp'],
         mail:'112301010@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/ankit-gupta-414313281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },

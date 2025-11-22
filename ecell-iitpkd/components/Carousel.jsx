@@ -5,16 +5,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import ideathon1 from '../src/assets/ideathon1.jpg';
-import hackathon2 from '../src/assets/hackathon2.jpg';
-import startTank from '../src/assets/startTank2.jpg';
-
-import rocket from "../src/assets/rocket.mp4";
-import idea from "../src/assets/ideathon.mp4";
+import ideathon1 from '../src/assets/ideathon1.webp';
+import hackathon2 from '../src/assets/hackathon2.webp';
+import startTank from '../src/assets/startTank2.webp';
+import productLaunch from  "../src/assets/productLaunchChallenge.webp"
+// import rocket from "../src/assets/rocket.mp4";
+// import idea from "../src/assets/ideathon.mp4";
 import readMore from "../src/assets/read-more.mp4";
-import hackathonVideo from "../src/assets/hackathon.mp4";
-
-import ideathon from '../src/assets/ideathon1.jpg'
+// import hackathonVideo from "../src/assets/hackathon.mp4";
+// import ideathon from '../src/assets/ideathon1.jpg'
 import './carousel.css';
 const Carousel = () => {
   return (
@@ -65,7 +64,9 @@ company might sustain in the market. Teams simulate running the startup, making 
         </div>
       </SwiperSlide>
       <SwiperSlide >
-        <video src={readMore} className='car-card' autoPlay loop muted playsInline></video>
+        {/* <video src={readMore} className='car-card' autoPlay loop muted playsInline></video> */}
+                <img id='carouselImg' src={productLaunch} alt="" />
+
                 <div className="car-desc read-more">
                     {/* <h1></h1> */}
                     <p>For all the events check out Events page.</p>

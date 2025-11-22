@@ -67,7 +67,7 @@ function Home(){
                 <img src={arrow} alt="" className="arrow"  onClick={handleClick}/>
             </div> */}
             <div className="intro slideUpElt" ref={introContent} >
-                <h1 className="heading">About Us</h1>
+                <h1>About Us</h1>
                 <p className="text">E-Cell IIT Palakkad is a student-driven initiative that nurtures the spirit of entrepreneurship through events, mentorship, and hands-on support.
                     At the core is <b>SURGE</b> ("Startup Upscaling and Resource Growth Engine")—a dynamic team of students, faculty, alumni, and experts from TechIn, IPTIF, and the CSquare Innovation Lab—dedicated to turning ideas into startups.
                 </p>

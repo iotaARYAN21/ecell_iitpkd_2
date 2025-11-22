@@ -126,7 +126,8 @@
     margin-left: 2.5rem;
 }
 h1,h2,h4,p{
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: reckless , serif;
     text-align: center;
 }
 .explore{
@@ -191,7 +192,7 @@ h1,h2,h4,p{
 .intro > h1 ,.vision h1 ,.events-activities h1 ,.team h1{
   /* font-size: 3rem; */
   padding: 2rem 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'reckless', serif;
   font-weight: 900;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
@@ -214,7 +215,7 @@ h1,h2,h4,p{
   hyphens: auto;            /* allows breaking long words if needed */
   line-height: 1.6;         /* improves readability */
   word-spacing: normal; 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'reckless',serif;
 }
 .intro ul{
     width: 100%;
