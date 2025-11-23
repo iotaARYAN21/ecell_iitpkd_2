@@ -51,7 +51,7 @@ function Home(){
         <div className="home-overlay">
             <section class="hero-split">
       <div class="hero-left">
-        <h1 className="slide-up-text  "><span>Entrepreneurship Cell</span><br />
+        <h1 className="slide-up-text"><span>Entrepreneurship Cell</span><br />
   <span>IIT Palakkad</span></h1>
         
       </div>
