@@ -60,8 +60,8 @@
 .arrow{
     height: 4rem;
     width: auto;
-    z-index: 999;
     position: absolute;
+    z-index: 999;
     bottom: 80px;
     right: 50px; /* Adjusted to be inside hero-left */
     animation: upDown 2s alternate infinite ease-in-out ;
@@ -549,7 +549,7 @@ h1,h2,h4,p{
     background: rgba(15, 32, 39, 0.3); 
     min-height: 50vh; /* Give it a set height to contain the background image */
     /* Z-index ensures it sits *over* the absolute image */
-    z-index: 2;
+    z-index: 1;
     position: relative; 
   }
 
@@ -558,11 +558,13 @@ h1,h2,h4,p{
     text-align: center;
     margin-bottom: 2rem;
     filter: brightness(120%);
+    z-index: 1;
   }
   
   /* Arrow flows with the text content */
   .arrow {
-    position: absolute; 
+    position: absolute;
+    /* z-index: 2  ;  */
     margin: 1rem auto 0; 
     right: 20px;
     bottom: 80px;
@@ -581,7 +583,7 @@ h1,h2,h4,p{
     clip-path: none; 
     background: none; /* Remove any previous backgrounds */
     /* Z-index ensures it is behind the text (hero-left) */
-    z-index: 1; 
+    z-index: 2; 
   }
 
   /* 3. Image styling (transparent background) */
