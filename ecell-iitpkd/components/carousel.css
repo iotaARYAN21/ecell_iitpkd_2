@@ -1,94 +1,106 @@
-#carousel-container{
+#carousel-container {
     height: auto;
-    width: 60% ;
-    margin-bottom: 5rem;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 5rem auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
 }
+
 .swiper {
-  width: 100%;
-  height: 100%; /* or a fixed value like 500px */
+    width: 100%;
+    padding-bottom: 2.5rem; 
 }
 
 .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
 }
 
-.car-desc{
-    color: white;
-    /* width: 50%; */
-    /* border: 2px solid white; */
-}
-.car-card{
-    height: 20rem;
-    width: 20rem;
-     border-radius: 10px;
-
+#carouselImg {
+    width: 100%;
+    height: auto;
+    max-height: 400px; 
+    aspect-ratio: 16/9; 
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-.swiper-pagination-bullet{
-    background-color:#EAF6FB;
-    /* padding: 5rem; */
-    margin-top: 10rem;
-}
-.swiper-button-next,.swiper-button-prev{
+.car-desc {
     color: #EAF6FB;
-}
-.swiper-button-prev,.swiper-button-next{
-    /* right: 100px; */
-    margin-top: 25px;
-    /* border: 2px solid white; */
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+    max-width: 800px;
 }
 
-
-#carouselImg{
-    height: 20rem;
-    width: 40rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius:10px ;
-}
-.car-desc h1{
+.car-desc h1 {
     font-family: 'reckless', serif;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
-    /* border: 2px solid white; */
+    margin-bottom: 0.5rem;
+    color: #fbc45e;
 }
-.car-desc p{
-    font-weight: 400;
-    font-size: 1.15rem;
-    line-height: 1.6;
+
+.car-desc p {
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
-@media (max-width:1080px){
-    #carouselImg{
-        border-radius:20px !important;
-    }
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fbc45e !important;
+    text-shadow: 0 0 5px black;
 }
-@media (max-width:768px) {
-    .car-desc h1{
-        font-size: 1.8rem;
-    }
-    .car-desc p{
-        font-size: 1.0rem;
-        padding: 0 1rem;
-    }
+
+.swiper-pagination-bullet {
+    background-color: #EAF6FB !important;
+    opacity: 0.5;
 }
-@media (max-width:600px){
-    .swiper-button-next,.swiper-button-prev{
+.swiper-pagination-bullet-active {
+    background-color: #fbc45e !important;
+    opacity: 1;
+}
+
+/* Mobile Optimization: Fits image and text in one view */
+@media (max-width: 768px) {
+    /* Hide arrows on mobile to save space */
+    .swiper-button-next, .swiper-button-prev {
         display: none;
     }
-}
-.read-more{
-    font-size:1rem;
-    font-weight: 400;
-    /* border: 2px solid white; */
-    margin: auto;
-    margin-top: 5rem;
-}
-/* p{
-    width:100%;
     
-} */
+    /* Use full width of the parent (which has small padding now) */
+    #carousel-container {
+        width: 100%; 
+    }
+
+    #carouselImg {
+        /* Significantly reduced height for visibility */
+        max-height: 200px; 
+        aspect-ratio: 16/9;
+    }
+
+    .car-desc {
+        margin-top: 0.8rem;
+        padding: 0 0.5rem;
+    }
+
+    .car-desc h1 {
+        font-size: 1.3rem; /* Smaller heading */
+        margin-bottom: 0.3rem;
+    }
+
+    .car-desc p {
+        font-size: 0.9rem; /* Compact text */
+        line-height: 1.4;
+        /* Truncate if too long to ensure it fits */
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

@@ -1,42 +1,73 @@
-.contact_form{
-    height: auto;
-    /* width: ; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contact_form {
+    /* Block display ensures the container fills the width, allowing Footer to be full width */
+    display: block; 
+    width: 100%;
+    min-height: 100vh;
+    padding: 0; /* Important: No padding on container to let Footer touch edges */
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
-    margin: 10rem 25%;
-    height: auto;
+    /* Margin centers the form card, separate from footer */
+    margin: 8rem auto 5rem auto; 
+    width: 90%;
+    max-width: 600px;
 }
-input ,textarea{
-    margin: 20px 0;
+
+/* Heading alignment */
+.contact_form h1 {
+    text-align: center;
+    color: #fbc45e;
+    margin-bottom: 2rem;
+    font-family: 'reckless', serif;
+}
+
+input, textarea {
+    margin: 15px 0;
     border-radius: 7px;
-    padding: 10px;
-    /* border: 2px solid #fbc45e; */
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
 }
-input{
-    height: 40px;
+
+input {
+    height: 50px;
 }
-button{
-    /* background-color: #ffb007; */
+
+button {
     width: 50%;
-    height: 40px;
+    height: 45px;
     border-radius: 7px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 1rem;
-    background-color: #EAF6FB   ;
-     /* background: #f46b45;  fallback for old browsers */
-/* background: -webkit-linear-gradient(to right, #eea849, #f46b45);  Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to right, #eea849, #f46b45);  */
+    font-size: 1.1rem;
+    background-color: #EAF6FB;
+    color: #1b1b1b;
+    border: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
 }
-button:hover{
-    cursor:pointer
+
+button:hover {
+    cursor: pointer;
+    background-color: #fbc45e;
+    transform: scale(1.02);
 }
-.btn{
+
+.btn {
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    form {
+        margin: 6rem auto 4rem auto;
+        width: 95%;
+    }
+    button {
+        width: 70%;
+    }
 }
