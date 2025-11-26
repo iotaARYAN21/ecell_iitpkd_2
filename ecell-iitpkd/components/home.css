@@ -25,7 +25,7 @@
 .hero-split {
   display: flex;
   align-items: stretch;
-  /* FIX: Exactly 100% viewport height minus the 4rem navbar */
+  /* Desktop: Full viewport height minus navbar */
   height: calc(100vh - 4rem);
   min-height: calc(100vh - 4rem);
   background: #0f2027;
@@ -47,7 +47,7 @@
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
   position: relative;
   z-index: 10;
-  height: 100%; /* Fill container */
+  height: 100%;
 }
 
 .hero-left h1 {
@@ -62,7 +62,7 @@
 /* RIGHT SIDE (Image/Logo) */
 .hero-right {
   flex: 1;
-  height: 100%; /* Fill container */
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +83,7 @@
     transform: scale(1.05);
 }
 
+/* Desktop Arrow Position */
 .arrow {
     height: 3rem;
     width: auto;
@@ -124,7 +125,7 @@
     overflow-x: hidden; 
 }
 
-/* ---------------- Team Grid System (Updated) ---------------- */
+/* ---------------- Team Grid System ---------------- */
 .team {
     margin-top: 4rem;
     margin-bottom: 5rem;
@@ -136,7 +137,6 @@
 
 .team-grid {
     display: grid;
-    /* Wide columns for Horizontal Cards */
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 2rem;
     width: 100%;
@@ -213,17 +213,24 @@ h1 {
         display: block; 
         position: relative;
         height: auto;
-        min-height: calc(100vh - 4rem);
-        /* Allow scroll if content is taller than screen on mobile */
+        /* Use 100dvh (Dynamic Viewport Height) to account for mobile navbar */
+        min-height: calc(100vh - 4rem); 
+        min-height: calc(100dvh - 4rem); 
         overflow: visible; 
     }
 
     .hero-left {
         width: 100%;
         min-height: calc(100vh - 4rem);
+        min-height: calc(100dvh - 4rem);
         padding: 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
+        
         background: rgba(15, 32, 39, 0.7); 
         backdrop-filter: blur(2px);
         position: relative;
@@ -254,11 +261,18 @@ h1 {
         filter: brightness(1.2);
     }
 
+    /* FIX: Mobile Arrow Positioning */
     .arrow {
-        bottom: 2rem;
-        right: 45%;
-        transform: translateX(50%);
-        z-index: 999;
+        /* Standard Horizontal Centering */
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto; /* Reset right property */
+        
+        /* Vertical Position: Use safe-area-inset for bottom bars */
+        bottom: calc(3rem + env(safe-area-inset-bottom));
+        
+        z-index: 1000;
+        height: 2.5rem; /* Slightly smaller on mobile */
     }
 }
 
