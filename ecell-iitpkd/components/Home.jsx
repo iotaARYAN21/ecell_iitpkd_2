@@ -4,13 +4,15 @@ import UserCard from "./UserCard";
 import Footer from "./Footer";
 import Carousel from "./Carousel.jsx";
 import RightNavBar from "./RightNavBar.jsx";
-
+import Spline from '@splinetool/react-spline';
 // Import Assets - Ensure these paths match your folder structure
 import arrow from "../src/assets/arrow2.svg";
 import ecellHome from '../src/assets/ecell_home2.png';
 
 // Import Data
 import teamData from "../Backend/teamData25.js";
+import HeroSection from "./HeroSection.jsx";
+import EventFeed from "./EventFeed.jsx";
 
 function Home(){
     const introContent = useRef(null);
@@ -39,25 +41,23 @@ function Home(){
     return (
     <div className="home">
         <div className="home-overlay">
-            {/* HERO SECTION */}
-            <section className="hero-split">
-                <div className="hero-left">
+            <HeroSection/>
+                {/* <div className="hero-left">
                     <h1 className="slide-up-text">
                         <span>Entrepreneurship Cell</span><br />
                         <span>IIT Palakkad</span>
                     </h1>
                 </div>
                 
-                {/* Logo Container - Background on Mobile, Side panel on Desktop */}
                 <div className="hero-right">
-                    <img id="ecellHome" src={ecellHome} alt="E-Cell Illustration" />
-                </div>
+                    <img id="ecellHome" src={ecellHome} alt="E-Cell Illustration" />//////////
+                </div> */}
                 
-                {/* Arrow Button */}
                 <img src={arrow} alt="Scroll" className="arrow" onClick={handleClick}/>
-            </section>
+            {/* <section className="hero-split">
+                
+            </section> */}
 
-            {/* INTRO SECTION */}
             <div className="intro slideUpElt" ref={introContent} >
                 <h1>About Us</h1>
                 <p className="text">
@@ -88,10 +88,11 @@ function Home(){
             </div>
 
             <div className="events slideUpElt">
-                <div id="calendar-in-mainpage">
+                {/* <div id="calendar-in-mainpage">
                     <h1>Events Calendar</h1>
                     <RightNavBar/>
-                </div>
+                </div> */}
+                <EventFeed/>
             </div>
 
             <div className="team slideUpElt">

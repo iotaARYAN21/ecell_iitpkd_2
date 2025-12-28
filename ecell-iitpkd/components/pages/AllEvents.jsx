@@ -26,7 +26,7 @@ function AllEvents(){
     return <>
         <div className="all-events">
                     <div className="event1">
-                        <img src={startTank} className="eventImg" alt="" />
+                        <img src={startTank} className="eventImg" alt="" loading="lazy" />
                         {/* <video src={rocket} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
                             <h1>Start Tank</h1>
@@ -34,7 +34,7 @@ function AllEvents(){
                         </div>
                     </div>
                     <div className="event2">
-                        <img src={startupExpo} className="eventImg" alt="" />
+                        <img src={startupExpo} className="eventImg" alt="" loading="lazy" />
 
                         {/* <video src={startupExpo} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
@@ -43,7 +43,7 @@ function AllEvents(){
                         </div>
                     </div>
                 <div className="event3">
-                        <img src={hackathon} className="eventImg" alt="" />
+                        <img src={hackathon} className="eventImg" alt=""  loading="lazy"/>
 
                     {/* <video src={hackathonVideo} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
@@ -52,7 +52,7 @@ function AllEvents(){
                         </div>
                 </div>
                 <div className="event4">
-                        <img src={ideathon} className="eventImg" alt="" />
+                        <img src={ideathon} className="eventImg" alt="" loading="lazy"/>
 
                     {/* <video src={idea} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
@@ -62,7 +62,7 @@ function AllEvents(){
                 </div>
                 <div className="event5">
                     {/* <video src={techXpo} className='card' autoPlay loop muted playsInline></video> */}
-                        <img src={startTank} className="eventImg" alt="" />
+                        <img src={startTank} className="eventImg" alt="" loading="lazy"/>
 
                         <div className='event-content'>
                             <h1>TechXpo</h1>
@@ -70,7 +70,7 @@ function AllEvents(){
                         </div>
                 </div>
                 <div className="event6">
-                        <img src={businessPlan} className="eventImg" alt="" />
+                        <img src={businessPlan} className="eventImg" alt="" loading="lazy" />
                     
                     {/* <video src={business} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
@@ -79,7 +79,7 @@ function AllEvents(){
                         </div>
                 </div>
                 <div className="event7">
-                        <img src={productLaunch} className="eventImg" alt="" />
+                        <img src={productLaunch} className="eventImg" alt="" loading="lazy" />
 
                     {/* <video src={productLaunch} className='card' autoPlay loop muted playsInline></video> */}
                         <div className='event-content'>
@@ -89,7 +89,7 @@ function AllEvents(){
                 </div>
                 <div className="event8">
                     {/* <video src={networking} className='card' autoPlay loop muted playsInline></video> */}
-                        <img src={startTank} className="eventImg" alt="" />
+                        <img src={startTank} className="eventImg" alt="" loading="lazy" />
                         <div className='event-content'>
                             <h1>Networking Dinners & Industry Meetups</h1>
                         <p className="desc">Exclusive invite-only networking sessions for selected participants, mentors, and investors.</p>
@@ -97,7 +97,7 @@ function AllEvents(){
                 </div>
                 <div className="event9">
                     {/* <video src={techWork} className='card' autoPlay loop muted playsInline></video> */}
-                        <img src={startTank} className="eventImg" alt="" />
+                        <img src={startTank} className="eventImg" alt="" loading="lazy" />
                         <div className='event-content'>
                             <h1>Technical and Entrepreneurial Workshops</h1>
                         <p className="desc">Covering cutting-edge technologies, product design, digital marketing, and financial modeling.</p>
@@ -105,7 +105,7 @@ function AllEvents(){
                 </div>
                 <div className="event10">
                     {/* <video src={mun} className='card' autoPlay loop muted playsInline></video> */}
-                        <img src={startTank} className="eventImg" alt="" />
+                        <img src={startTank} className="eventImg" alt="" loading="lazy" />
                         <div className='event-content'>
                             <h1>MUN</h1>
                         <p className="desc">A nationwide MUN focussing on the entrepreneurial aspects and the challenges the society faces in execution of ideas.</p>
@@ -113,7 +113,7 @@ function AllEvents(){
                 </div>
                 <div className="event11">
                     {/* <video src={trading} className='card' autoPlay loop muted playsInline></video> */}
-                        <img src={startTank} className="eventImg" alt="" />
+                        <img src={startTank} className="eventImg" alt="" loading="lazy" />
                         <div className='event-content'>
                             <h1>Live Trading Simulation</h1>
                         <p className="desc">An interactive session for students to understand financial markets through virtual trading.</p>
@@ -121,7 +121,7 @@ function AllEvents(){
                 </div>
                 <div className="event12">
                     {/* <video src={investment} className='card' autoPlay loop muted playsInline></video> */}
-                        <img src={startTank} className="eventImg" alt="" />
+                        <img src={startTank} className="eventImg" alt="" loading="lazy" />
                         <div className='event-content'>
                             <h1>Investment Game</h1>
                         <p className="desc">Participants act as investors and entrepreneurs, negotiating deals based on real-time data.</p>

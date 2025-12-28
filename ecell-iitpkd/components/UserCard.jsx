@@ -13,7 +13,7 @@ const UserCard = (props) => {
                     alt={props.name} 
                     className="user_img"
                     // Use lazy loading if prop is passed, or default to auto
-                    loading={props.loading || "lazy"} 
+                    loading="lazy"
                 />
             </div>
             <h3>{props.name}</h3>

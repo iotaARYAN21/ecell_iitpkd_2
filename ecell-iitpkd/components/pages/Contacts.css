@@ -38,8 +38,24 @@ input {
     height: 50px;
 }
 
-button {
+.btn > button {
+
     width: 50%;
+    height: 50px;
+    border-radius: 30px; /* Pill shape is more modern */
+    font-family: 'Poppins', sans-serif; /* Switch to Sans-serif for buttons */
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+    /* Gradient Button */
+    background: linear-gradient(90deg, #fbc45e 0%, #eea849 100%);
+    color: #0f2027; /* Dark text on gold button for contrast */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(251, 196, 94, 0.4); /* Glow shadow */
+
+    /* width: 50%;
     height: 45px;
     border-radius: 7px;
     font-family: 'Times New Roman', Times, serif;
@@ -49,13 +65,18 @@ button {
     color: #1b1b1b;
     border: none;
     transition: all 0.3s ease;
-    margin-top: 1rem;
+    margin-top: 1rem; */
 }
 
-button:hover {
-    cursor: pointer;
+.btn>button:hover {
+
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(251, 196, 94, 0.6);
+    background: linear-gradient(90deg, #eea849 0%, #fbc45e 100%);
+
+    /* cursor: pointer;
     background-color: #fbc45e;
-    transform: scale(1.02);
+    transform: scale(1.02); */
 }
 
 .btn {
