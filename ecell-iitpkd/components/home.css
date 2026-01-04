@@ -153,8 +153,12 @@
 
 /* ---------------- Animations ---------------- */
 @keyframes upDown {
-    from{ transform: translateY(-10px); }
-    to{ transform: translateY(10px); }
+    from{ transform: translateY(0px); }
+    to{ transform: translateY(-15px); }
+}
+@keyframes upDownMobile {
+    from { transform: translate(-50%, 0); } /* Keeps it centered X, moves 0 Y */
+    to { transform: translate(-50%, -15px); } /* Keeps it centered X, moves Up Y */
 }
 
 @keyframes slideUpSettle {
@@ -272,14 +276,15 @@ h1 {
     .arrow {
         /* Standard Horizontal Centering */
         left: 50%;
-        transform: translateX(-50%);
+        /* transform: translateX(-50%); */
         right: auto; /* Reset right property */
         
         /* Vertical Position: Use safe-area-inset for bottom bars */
-        bottom: calc(3rem + env(safe-area-inset-bottom));
-        
-        z-index: 1000;
+        /* bottom: calc(3rem + env(safe-area-inset-bottom)); */
+        bottom: 80px;
+        /* z-index: 1000; */
         height: 2.5rem; /* Slightly smaller on mobile */
+        animation: upDownMobile 2s alternate infinite ease-in-out;
     }
 }
 
