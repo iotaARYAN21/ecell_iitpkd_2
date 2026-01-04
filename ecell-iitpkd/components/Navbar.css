@@ -147,7 +147,7 @@ background-color: #fdfaf5;
   transition: transform 0.3s ease; */
 }
 
-@media (max-width:800px){
+/* @media (max-width:800px){
     nav .menu{
         display: flex;
     }
@@ -165,7 +165,6 @@ background-color: #fdfaf5;
     }
     nav ul.open{
         display: flex;
-        /* height: max-content; */
     }
     nav ul li{
         width: 100%;
@@ -175,6 +174,56 @@ background-color: #fdfaf5;
         margin: 0.2rem 0.5rem;
     }
     .nav-logo-container{
+        margin: 0;
+    }
+} */
+
+
+@media (max-width: 800px) {
+    /* 1. Keep the main bar stable */
+    nav {
+        flex-direction: row; /* Keep Logo Left, Hamburger Right */
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem; /* Add padding so logo doesn't touch edge */
+        height: 4.5rem;  /* Force fixed height */
+    }
+
+    /* 2. Fix the Menu Links to drop DOWN, not push inside */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute; /* Takes it out of the flow */
+        top: 4.5rem;        /* Starts exactly below the navbar */
+        left: 0;
+        background: rgba(15, 32, 39, 0.95); /* Solid dark background */
+        backdrop-filter: blur(10px);
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    /* 3. Show menu when open */
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0; /* More clickable space */
+    }
+
+    /* 4. Ensure Hamburger stays in place */
+    nav .menu {
+        display: flex;
+        position: static; /* Let flexbox handle placement */
+        margin-right: 0.5rem;
+    }
+
+    /* 5. Logo adjustments */
+    .nav-logo-container {
         margin: 0;
     }
 }
