@@ -31,24 +31,34 @@ import { useState,useEffect } from 'react';
 
 const EventFeed = () => {
     const [events,setEvents] = useState([]);
-    const API_KEY = "";
-    const CALENDAR_ID="";
-    useEffect(()=>{
-       fetch(`https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&orderBy=startTime&singleEvents=true&maxResults=3`)
+    const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+    const CALENDAR_ID=import.meta.env.VITE_CALENDAR_ID;
+    useEffect(() => {
+    // Get current time in the format Google expects (ISO String)
+    const now = new Date().toISOString(); 
+      
+    // ADDED: &timeMin=${now} ensures we only get FUTURE events
+    console.log("My API URL: ",`https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&orderBy=startTime&singleEvents=true&timeMin=${now}&maxResults=3`)
+    fetch(`https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&orderBy=startTime&singleEvents=true&timeMin=${now}&maxResults=3`)
       .then(response => response.json())
       .then(data => {
-        // Transform Google's data format to match our component
-        const formattedEvents = data.items.map(item => ({
+        console.log("Data from Google:", data);
+        // Safety Check: Ensure data.items exists before mapping
+        const items = data.items || [];
+        
+        const formattedEvents = items.map(item => ({
           id: item.id,
-          title: item.summary,
+          title: item.summary || "No Title", // Fallback if title is hidden
           date: new Date(item.start.dateTime || item.start.date),
           location: item.location || "TBD",
-          description: item.description,
-          link: item.htmlLink
+          description: item.description || "",
+          // link: item.htmlLink
         }));
         setEvents(formattedEvents);
-      });
+      })
+      .catch(err => console.error("Error fetching events:", err));
   }, []);
+  console.log(events);
   return (
     <div style={styles.container}>
       <h2 style={styles.header}>Upcoming Events</h2>
@@ -70,7 +80,7 @@ const EventFeed = () => {
                 🕒 {format(event.date, 'h:mm a')} • 📍 {event.location}
               </p>
               <p style={styles.description}>{event.description}</p>
-              <a href={event.link} style={styles.link}>Register →</a>
+              {/* <a href={event.link} style={styles.link}>Register →</a> */}
             </div>
           </div>
         ))): <h2>☕We are currently brewing our next big event. Grab a coffee while you wait.</h2>

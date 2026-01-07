@@ -7,7 +7,7 @@ const HeroSection = () => {
     // This function initializes the particle engine.
     // It ensures the external script loads only once.
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
+        // console.log(engine);
         await loadSlim(engine);
     }, []);
 
